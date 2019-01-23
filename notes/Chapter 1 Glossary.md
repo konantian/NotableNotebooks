@@ -1,5 +1,5 @@
 ---
-title: Chapter 1 Glossary
+title: Chapter 2 Glossary
 tags: [Notebooks/Phil 120]
 ---
 
@@ -27,3 +27,20 @@ tags: [Notebooks/Phil 120]
 `An argument is cogent if and only if it is inductively strong AND all the premises are true.`
 
 ### Logically True
+`A statement is logically true if and only if it is not possible for the statement to be false. Such statements are sometimes called tautologies.`
+
+### Logically False
+`A statement is logically false if and only if it is not possible for the statement to be true. Such statements are sometimes called self-contradictions.`
+
+### Logically Contingent
+`A statement is logically contingent if and only if it is neither logically true nor logically false;i.e.,it is both possible for the statement to be true, and possible for the statement to be false.`
+
+### Logically Equivalent
+`A pair of statements is logically equivalent if and only if it is not possible for the statements to have different truth values.`
+
+### Logically Contradictory
+`A pair of statements is logically contradictory if and only if it is not possible for the statements to have the same truth values.`
+
+### Logically Inconsistent
+`A set of statements is logically inconsistent if and only if it is not possible for all the statements to be true.`
+
