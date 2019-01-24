@@ -1,5 +1,5 @@
 ---
-title: Chapter 2 Glossary
+title: Chapter 1 Glossary
 tags: [Notebooks/Phil 120]
 ---
 
@@ -43,4 +43,3 @@ tags: [Notebooks/Phil 120]
 
 ### Logically Inconsistent
 `A set of statements is logically inconsistent if and only if it is not possible for all the statements to be true.`
-
