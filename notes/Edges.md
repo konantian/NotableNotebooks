@@ -23,6 +23,7 @@ tags: [Notebooks/Cmput206]
  * Edge detection by image gradient
  ![Image derivate by linear filter](@attachment/cmput206/gradient_edge_detection.png)
  * Prewitt edge operator
+ * 
  ![Prewitt operator](@attachment/cmput206/prewitt_operator.png)
  * Sobel edge operator
    * The Sobel–Feldman operator is based on convolving the image with a small, separable, and integer-valued filter in the horizontal and vertical directions and is therefore relatively **inexpensive** in terms of computations. 
