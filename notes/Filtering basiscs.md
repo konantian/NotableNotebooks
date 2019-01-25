@@ -6,6 +6,8 @@ tags: [Notebooks/Cmput206]
 # Filtering basiscs
 
 ## Filter
+> It refers to accepting/rejection **frequency** components
+
 > Filtering is a technique for modifying or enhancing an image. For example, you can filter an image to emphasize certain features or remove other features.
 
 > Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel.
@@ -33,17 +35,27 @@ tags: [Notebooks/Cmput206]
   * Difference filters
     * Edge detection
     * Image sharpening
- * Box filter
+  * Box filter
+  ```
+  Box filter is basically an average-of-surrounding-pixel kind of image filtering
+  ```
  ![Box filter](@attachment/cmput206/box_filter.png)
- * Gaussian filter 
+  * Gaussian filter 
+  ```
+  The Gaussian smoothing operator is a 2-D convolution operator that is used to `blur' images and remove detail and noise.
+  ```
  ![Gaussian filter](@attachment/cmput206/gaussian_filter.png)
- * Laplace filter
+  * Laplace filter
+  ```
+  The Laplacian of an image highlights regions of rapid intensity change and is therefore often used for edge detection
+  ```
  ![Laplace filter](@attachment/cmput206/laplace_filter.png)
  
   * Convolution(Spatial linear filter)
     * convolution is a general purpose filter effect for images
     * the output is a new modified filtered image
   ![Convolution](@attachment/cmput206/convolution.png)
+  ![Convolution](@attachment/cmput206/convolution_example.png)
   * Correlation
     * correlations and convolutions give same results when at least one of f and w is symmetric
     ![Correlation](@attachment/cmput206/correlation.png)
@@ -72,6 +84,8 @@ tags: [Notebooks/Cmput206]
     ![Median filter](@attachment/cmput206/median_filter.png)
   * Weighted median filter
     ![Weighted median filter](@attachment/cmput206/weighted_median_filter.png)
+    * Restore some spatialization absent in the traditional median, which generates "moving edges", by better centering the median around the central pixel of the square window. 
+    * Allow negative weights, to better mimic not only smoothing filters (positive weights) but also "median-derivative-like" filters.
   
   
   * Sharpening Spatial Filters
@@ -94,4 +108,11 @@ tags: [Notebooks/Cmput206]
     * Add the multiplied mask image to the original image
   * Properties
     * The resulting image, although clearer, may be a less accurate representation of the image's subject
-    *
+  
+**High-boost Filtering**
+  * In image processing, it is often desirable to emphasizehigh frequency components representing the image detailswithout eliminating low frequency components (such assharpening)
+  ![High-boost Filtering](@attachment/cmput206/high_boost.png)
+  
+**Image Gradient**
+  * An image gradient is a directional change in the intensity or color in an image. 
+  ![Image Gradient](@attachment/cmput206/image_gradient.png)
