@@ -1,6 +1,8 @@
 ---
 title: Symbolic Expressions
 tags: [Notebooks/Cmput 325]
+created: '2019-01-22T20:25:17.440Z'
+modified: '2019-01-27T17:47:08.580Z'
 ---
 
 **[Symbolic Expressions](https://webdocs.cs.ualberta.ca/~mmueller/courses/325-Winter-2019/slides/symbolic-expressions.pdf)**
@@ -103,5 +105,29 @@ tags: [Notebooks/Cmput 325]
 
 (car '(a . b)) -> a
 (cdr '(a . b)) -> b
+
+(car '(a)) -> a
+(cdr '(a)) -> nil
+(car '(a . nil)) -> a
+(cdr '(a . nil)) -> nil
+(equal '(a) '(a . nil)) -> T ;both are equal because they have same result on "car" and "cdr"
+
+(cons 1 2) -> (1 . 2) ; building sexpr with cons
+(cons (cons 1 (cons 2 3)) 4) -> ((1 . (2 . 3)) . 4)
+(cons (cons 1 2) (cons 3 4)) -> ((1 . 2) . (3 . 4))
+
+(car '((1 . 2) . (3 . 4))) -> (1 . 2)
+(cdr '((1 . 2) . (3 . 4))) -> (3 . 4)
+(caar '((1 . 2) . (3 . 4))) -> 1 
+(cdar '((1 . 2) . (3 . 4))) -> 2 ;execute car first, then cdr, order from last to first
+(cadr '((1 . 2) . (3 . 4))) -> 3
+(cddr '((1 . 2) . (3 . 4))) -> 4
+
+(1 2 3 4) == (1 . (2 3 4) == (1 . (2 . (3 4))) == (1 . (2 . (3 . (4)))) == (1 . (2 . (3 . (4 . nil))))
+
+(a b c) == (a b c . nil) == (a b . (c . nil)) == (a . (b . (c . nil))) == (a b . (c)) == (a . (b c))
+
+(print '(a . (b . (c . nil))) -> (A B C) ; print s-exper in their simplest form and the output has two lines since the quote 
+                                 (A B C) ; also print the result
 
 ```

@@ -1,6 +1,9 @@
 ---
 title: Reinforcement Renaissance
 tags: [Notebooks/Cmput 496]
+created: '2019-01-21T23:06:00.472Z'
+modified: '2019-01-27T17:49:15.302Z'
+deleted: true
 ---
 
 # Reinforcement Renaissance
