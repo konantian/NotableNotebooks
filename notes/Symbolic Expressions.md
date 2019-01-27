@@ -87,3 +87,21 @@ tags: [Notebooks/Cmput 325]
    * Lists are special cases of s-expr
    * Check by car and cdr
    * Check by convert to simplest form
+   
+  
+**Examples**
+```lisp
+'(a . b) ;a dotted pair between a and b
+'(a . (b . c)) ; a dotted pair between a and dotted pair (b . c)
+'(1 2 3 (4 . 5)) ; a list contains number 1 2 3 and dotted pair (4 . 5)
+
+(car (cons 'x 'y)) -> x
+(cdr (cons 'x 'y)) -> y
+
+(car '(a.b)) -> a.b ;an atom a.b, not dotted pair
+(cdr '(a.b)) -> nil
+
+(car '(a . b)) -> a
+(cdr '(a . b)) -> b
+
+```
