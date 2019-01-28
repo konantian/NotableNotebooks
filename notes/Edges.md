@@ -1,12 +1,14 @@
 ---
 title: Edges
 tags: [Notebooks/Cmput206]
+created: '2019-01-25T02:51:29.020Z'
+modified: '2019-01-28T15:09:20.119Z'
 ---
 
 # Edges
 
 **Edges**
-  * Are image positions where local image intensity changes significantly along a particular orientation
+  * Are image positions where **local image** intensity changes **significantly** along a particular **orientation**
   * Human visual system extracts sensitive information from edges
   * An entire image can be decently "reconstructed" from edges, so in that sense edges are the "information packets" in an image
   * Edge detection
