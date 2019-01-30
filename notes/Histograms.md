@@ -1,6 +1,8 @@
 ---
 title: Histograms
 tags: [Notebooks/Cmput206]
+created: '2019-01-23T18:30:49.108Z'
+modified: '2019-01-30T21:37:01.747Z'
 ---
 
 # Histograms
@@ -38,9 +40,7 @@ tags: [Notebooks/Cmput206]
       
 ## Histogram equalization(histogram flattening)
 **Definition**:
-```
-Histogram equalization is a technique for adjusting image intensities to enhance contrast.
-```
+`Histogram equalization is a technique for adjusting image intensities to enhance contrast.`
 **Local(Adaptive)**:
   * Histogram equalization does not work well when the distribution of pixel values varies a lot over local windows in an image
   * Doing histogram equalization within a sliding window is often more useful than the global histogram equalization

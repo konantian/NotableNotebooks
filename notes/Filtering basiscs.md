@@ -1,6 +1,8 @@
 ---
 title: Filtering basiscs
 tags: [Notebooks/Cmput206]
+created: '2019-01-24T04:20:22.722Z'
+modified: '2019-01-30T21:51:56.709Z'
 ---
 
 # Filtering basiscs
@@ -19,7 +21,7 @@ tags: [Notebooks/Cmput206]
   
 
 ## Filter size
-  * Typically is oldd matrix size(2k+1) by (2k+1), for center the filter on a pixel.Equal number of pixels on all sides
+  * Typically is oldd matrix size(2k+1) by (2k+1), for center the filter on a pixel and equal number of pixels on all sides
   * Computational complexity increases with filter size
 
 ## Types of filters
@@ -110,7 +112,7 @@ tags: [Notebooks/Cmput206]
     * The resulting image, although clearer, may be a less accurate representation of the image's subject
   
 **High-boost Filtering**
-  * In image processing, it is often desirable to emphasizehigh frequency components representing the image detailswithout eliminating low frequency components (such assharpening)
+  * In image processing, it is often desirable to emphasize high frequency components representing the image details without eliminating low frequency components (such as sharpening)
   ![High-boost Filtering](@attachment/cmput206/high_boost.png)
   
 **Image Gradient**
