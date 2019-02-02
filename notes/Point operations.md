@@ -2,7 +2,7 @@
 title: Point operations
 tags: [Notebooks/Cmput206]
 created: '2019-01-28T21:40:03.818Z'
-modified: '2019-01-29T00:02:11.465Z'
+modified: '2019-01-30T22:15:02.543Z'
 ---
 
 # Point operations
@@ -34,7 +34,7 @@ modified: '2019-01-29T00:02:11.465Z'
     $$ s = c*r^\gamma $$
     * Gamma correction
     ![Gamma correction](@attachment/cmput206/gamma_correction.png)
-      * A gamma value gamma < 1is sometimes called an encoding gamma, and the process of encoding with this compressive power-law nonlinearity is called gamma compression; conversely a gamma value gamma >1 is called a decoding gamma and the application of the expansive power-law nonlinearity is called gamma expansion.
+      * A gamma value gamma < 1 is sometimes called an encoding gamma, and the process of encoding with this compressive power-law nonlinearity is called gamma compression; conversely a gamma value gamma >1 is called a decoding gamma and the application of the expansive power-law nonlinearity is called gamma expansion.
       
   * Piecewise linear transformation
     * A complementary approach to the previously discussed methods
