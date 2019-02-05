@@ -2,7 +2,7 @@
 title: Lambda Calculus
 tags: [Notebooks/Cmput 325]
 created: '2019-02-01T22:48:43.464Z'
-modified: '2019-02-02T21:19:59.915Z'
+modified: '2019-02-03T17:57:25.967Z'
 ---
 
 # Lambda Calculus
@@ -51,5 +51,15 @@ modified: '2019-02-02T21:19:59.915Z'
   (apply (function (lambda (x) (+ x 1))) '(3)) -> 4
   ```
   
-## Lambda Calculus
-  *
+### Lambda Calculus
+
+**Syntax**
+  * All valid expressions defined by this language are called lambda expressions
+  * The definition is recursive: an application consists of two expressions, each of which can again be an application, etc
+  * Lambda expressions can be nested
+  
+**Curried Functions**
+  * Function takes only the first argument
+  * It produces as result a new function
+  * This function now takes the second argument
+  * It produces as result a new function
