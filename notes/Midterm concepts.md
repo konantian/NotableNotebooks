@@ -2,7 +2,7 @@
 title: Midterm concepts
 tags: [Notebooks/Phil 120]
 created: '2019-02-05T15:51:24.887Z'
-modified: '2019-02-05T16:46:11.575Z'
+modified: '2019-02-06T02:54:31.328Z'
 ---
 
 # Midterm concepts
@@ -10,7 +10,7 @@ modified: '2019-02-05T16:46:11.575Z'
 ## Logic
 > Logic is the study of (i) criteria for distinguishing successful from unsuccessful argument, (ii) methods for applying those criteria, and (iii) related properties of statements such as implication, equivalence, logical truth, consistency, etc.
 
-## Statment
+## Statement
 > A statement is a declarative sentence; a sentence that attempts to state a fact-as opposed to a question, a command, an exclamation.
 
 ## Truth Value
