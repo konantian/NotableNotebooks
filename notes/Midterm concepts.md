@@ -2,7 +2,7 @@
 title: Midterm concepts
 tags: [Notebooks/Phil 120]
 created: '2019-02-05T15:51:24.887Z'
-modified: '2019-02-06T02:54:31.328Z'
+modified: '2019-02-11T02:44:13.008Z'
 ---
 
 # Midterm concepts
@@ -31,8 +31,8 @@ modified: '2019-02-06T02:54:31.328Z'
 ## Cogency
 > An argument is cogent if and only if it is inductively strong And all the premises are true.
 
-## Logically True
 
+## Logically True
 > A statement is logically true if and only if it is not possible for the statement to be false. Such statements are sometimes called tautologies.
 
 ## Logically False
@@ -66,7 +66,7 @@ modified: '2019-02-06T02:54:31.328Z'
 > Truth-functionaly logic is the logic of truth-functional combinations of simple sentence. It investigates the properties that arguments, sentences, and sets of sentences have in virtue of their truth-functional structure.
 
 ## Truth Value Assignment
-> A truth value assignment is an assignment of the value true or the value false, but not both, to each of the atomic wffs of S.A truth value assignment is a function from the set of atomic wffs into the set {T,F}.
+> A truth value assignment is an assignment of the value true or the value false, but not both, to each of the atomic wffs of S.A truth value assignment is a function from the set of atomic wffs into the set {T,F}
 
 ## Truth-Functionally True
 > A wff P of S is truth-functionally true iff P is true on every truth value assignment.
