@@ -1,8 +1,8 @@
 ---
 title: Lecture 11 Knowledge in Heuristic Search
 tags: [Notebooks/Cmput 496]
-created: '2019-03-23T02:32:16.065Z'
-modified: '2019-03-23T03:51:17.655Z'
+created: '2019-03-23T03:59:23.276Z'
+modified: '2019-03-23T04:18:03.463Z'
 ---
 
 # Lecture 11 -- Knowledge in Heuristic Search
@@ -89,5 +89,9 @@ modified: '2019-03-23T03:51:17.655Z'
     * Move feature vector: (0,0,1,...,1,1,0,...,1,0,...0,0,...)
   * Pattern databases
   * Neural nets
+
+**Benson's Algorithm**
+> Benson's algorithm finds stones and territories that are unconditionally alive
+
 
 
