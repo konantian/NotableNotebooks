@@ -2,7 +2,7 @@
 title: Lecture 14 Statistical Analysis of Repeated Simulations
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T23:44:54.014Z'
-modified: '2019-03-24T02:24:33.333Z'
+modified: '2019-03-24T02:52:11.427Z'
 ---
 
 # Lecture 14 Statistical Analysis of Repeated Simulations
@@ -29,7 +29,35 @@ modified: '2019-03-24T02:24:33.333Z'
 ## Statistical Analysis of Repeated Simulations
 **Borel's Law of Large Numbers**
   * Repeating experiments many times will get results close to expectation
-  * This estimate will be very rought when n is small(当n很小的时候，结果往往不准确)
-  * Improves as n gets large, and approaches true p
-   
+  * This estimate will be very rough when n is small(当n很小的时候，结果往往不准确)
+  * Improves as n gets large, and approaches true p(n越大，结果越精确)
+
+**Bernouli Experiment**
+  * Random experiment, typically repeated many times, same fixed p
+  * Each single experiment draws from Bernouli distribution for p
+  * Simulation is a Bernouli Experiment
+    1. Finite tree
+    2. Finitely many leaves
+    3. Finitely many paths to leaves
+    4. Each leaf has fixed value 0(和局) or 1(赢）
+    5. In each node, the simulaiton policy has a fixed distribution over its children
+    6. The winning probability at the root is just the probability of choosing a path leading to a win
+**Flat simulation player(1 ply tree)**
+  * If we increase n run more and more simulations, the winrate for c will stabilize
+  * Winrate will converge to the "true winrate"
+  * Winrate may be far from true minimax value(bias产生于假设对手也是随机下子)
+
+**Benefits of More simulations**
+  * Reduce variance(but not bias)
+  * Better selection when serveral moves are almost tied for first
+  * Rule out "unlucky" cases which occur with low number of simulations(次数越多，产生偶然性的几率越低)
+
+**Confidence Interval**
+  * Confidence Interval:A range in which the true value is estimated to be
+  * Confidence level: Probability that the range contains the true value
+  * For lower confidence level, the intervals are smaller - more chance of error(包含的数据过少，不太可能包括true mean)
+  * For higher confidence level, the intervals are larger - less chance of error(包含的数据足够多，很可能包括true mean)
+
+
+
 

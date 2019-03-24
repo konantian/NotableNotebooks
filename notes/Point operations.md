@@ -2,7 +2,7 @@
 title: Point operations
 tags: [Notebooks/Cmput206]
 created: '2019-01-28T21:40:03.818Z'
-modified: '2019-01-30T22:15:02.543Z'
+modified: '2019-03-24T02:34:07.354Z'
 ---
 
 # Point operations
@@ -31,7 +31,7 @@ modified: '2019-01-30T22:15:02.543Z'
       ![Log transformation](@attachment/cmput206/log_transformation.png)
   * Power law(nth power/nth root)
     * Map a narrow range of dark input values into a wider range of output values or vice versa
-    $$ s = c*r^\gamma $$
+      $s = c*r^\gamma$
     * Gamma correction
     ![Gamma correction](@attachment/cmput206/gamma_correction.png)
       * A gamma value gamma < 1 is sometimes called an encoding gamma, and the process of encoding with this compressive power-law nonlinearity is called gamma compression; conversely a gamma value gamma >1 is called a decoding gamma and the application of the expansive power-law nonlinearity is called gamma expansion.
