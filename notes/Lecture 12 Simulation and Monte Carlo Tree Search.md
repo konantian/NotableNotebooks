@@ -2,7 +2,7 @@
 title: Lecture 12 Simulation and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T02:32:16.065Z'
-modified: '2019-03-23T04:46:24.634Z'
+modified: '2019-03-23T22:20:12.548Z'
 ---
 
 # Lecture 12 Simulation and Monte Carlo Tree Search
@@ -29,10 +29,10 @@ modified: '2019-03-23T04:46:24.634Z'
   * A simulation can only be as good as the underlying model
   * If you feed great data to an invalid model, you typically get garbage.(如果使用不好的数据给好的模型，出来的结果也会不尽人意)
 
-**Games with Change elements**
+**Games with Chance elements**
   * Using random simulations is a natural idea
 
-**Games without change element**
+**Games without chance element**
   * Using random simulaitons is much less natrual
   * Often, it works very well
   * TicTacToe
@@ -53,6 +53,7 @@ modified: '2019-03-23T04:46:24.634Z'
   * Exact answer:
     1. Run solver
     2. Compute minimax value
+    3. Negmax and alphabeta
   * Heuristic:
     1. Depth-limited alphabeta search
     2. Run simulations,score the final result
@@ -64,7 +65,7 @@ modified: '2019-03-23T04:46:24.634Z'
     2. Measure the winrate
   3. After all simulations play move with highest winrate
 
-**Compare between simpulation player and perfect player
+**Compare between simpulation player and perfect player**
   * Sim(100)
     * Perfect player never loses in either color
     * 100 is not enought to get precise number
