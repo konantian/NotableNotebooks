@@ -2,7 +2,7 @@
 title: Lecture 16 Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-03-24T17:57:07.730Z'
+modified: '2019-03-24T19:25:15.479Z'
 ---
 
 # Lecture 16 Selective search and Monte Carlo Tree Search
@@ -72,6 +72,48 @@ modified: '2019-03-24T17:57:07.730Z'
       * Average over better samples may be closer to min, max
       * Source of errors
         1. can miss totally by hard-pruning all good moves
-    
+
+  * Simple VS UCB move selection
+    * UCB take average over more simulations for good move
+    * UCB take fewer simulations for bad move
+    * Simple just average over all simulations
+    * UCB selectes move with most-simulated
+    * Simple selected move with highest winrate
+
+## Monte Carlo Tree Search
+### Model
+  1. **Selection** - traverse existing tree using formula such as UCT to select a child in each node
+    * Run as many iterations of MCTS as you can
+    * Then select move to play at root
+    * Select child
+      * Child with highest number of wins(not stable,有的时候较差的move由于simulation的次数不够，导致胜率比相对更好的move高)
+      * Child with most visited
+  2. **Expansion** - add nodes to tree
+    * Add one node per iteration
+    * Paths with strong moves become much deeper than others(有好的move的路径会探索更多，不好的move的路径探索相对更少)
+  3. **Simulation** - follow randomized policy to end of game
+    * Using any simulation policy, uniform random, rule_based, probabilistic
+    * Result can only be 1(win) or 0(lose)
+    * Can run more than one simulation from each leaf node
+  4. **Backpropagation** - update winrate along path to root
+    * Update wins and visit counts along path to root(在到达leaf node以后，更新这条路径上所有的node的count)
+    * Flip wins/loses at each step
+  5. **Extending Search**
+    * Extending search if highest winrate move is different with most visited move
+    * If B is really good then it will receives many more simulations soon(好的move会导致更多的visit)
+    * If B is is a bad move, it's winrate and upper confidence bound will drop quickly with more simulations(不好的move随着simulation的增加，胜率不断稳定，最终开始下降)
+
+
+### UCT algorithms Main ideas
+  * Combines tree search with simulations
+  * Uses results of simulations to guide growth of the game tree
+  * Uses UCB-like rule to select "best" child of a tree node
+  * Select a good path in the tree to explore/exploit next
+  * Stores winrate statistics in each node, used for child selection
+
+### From UCB to UCT
+  * UCB: uses global count of all simulations N
+  * UCT: uses simulaiton count of parent np
+  * For root, UCT is identical to UCB(分母都是1，而且只有root一个node)
 
 
