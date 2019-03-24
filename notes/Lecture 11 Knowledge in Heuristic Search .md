@@ -2,7 +2,7 @@
 title: Lecture 11 Knowledge in Heuristic Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T03:59:23.276Z'
-modified: '2019-03-23T04:18:03.463Z'
+modified: '2019-03-24T04:47:27.546Z'
 ---
 
 # Lecture 11 -- Knowledge in Heuristic Search
@@ -41,7 +41,7 @@ modified: '2019-03-23T04:18:03.463Z'
 ## Evaluation
 **State Evaluation**
   * Mapping from(full) state to one number
-  * Measure hwo good is that state
+  * Measure how good is that state
   * Also called "Evaluation function" and "position Evaluation"
   * Interpretation
     * Number: Represent the value of this state,used for **relative ranking** of state
