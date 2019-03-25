@@ -2,7 +2,7 @@
 title: Lecture 11 Knowledge in Heuristic Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T03:59:23.276Z'
-modified: '2019-03-24T04:47:27.546Z'
+modified: '2019-03-24T22:09:30.482Z'
 ---
 
 # Lecture 11 -- Knowledge in Heuristic Search
@@ -86,7 +86,7 @@ modified: '2019-03-24T04:47:27.546Z'
   * Handcoded rules
   * Simple features
     * Each feature is a boolean state about a state or a move
-    * Move feature vector: (0,0,1,...,1,1,0,...,1,0,...0,0,...)
+    * Move feature vector: $(0,0,1,...,1,1,0,...,1,0,...0,0,...)$
   * Pattern databases
   * Neural nets
 
