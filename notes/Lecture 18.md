@@ -2,7 +2,7 @@
 title: Lecture 18
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-03-25T18:40:09.210Z'
+modified: '2019-03-25T19:52:21.816Z'
 ---
 
 # Lecture 18
@@ -66,3 +66,44 @@ modified: '2019-03-25T18:40:09.210Z'
     * $m_1$ has feature $f_1,f_2,$ strength $w_1 * w_2$
     * $m_2$ has feature $f_2,f_5,f_6$ strength $w_2 * w_5*w_6$
     * p($m_1$ beats $m_2$) = $\frac{w_1 * w_2}{w_1 * w_2+w_2 * w_5 * w_6}$
+
+### Limits of learning form Game records
+  1. Can only learn what is in the data(只能学习数据中存在的，对于新的情况反映不好)
+  2. Can only learn what can be represented in our model
+    * Nerual nets are much more powerful to represent high-level concepts than simple features
+
+### Limits of move prediction
+  1. A better move predictor does not necessarily make a better player
+  2. Playing moves that are good “on average” may fail in such situations
+  3. Can never reach 100% prediction
+    * Multiple equally good moves(当有好几个move一样好的时候，会选择哪个难以确定)
+      * Same point value in endgame(当好几个move可以在游戏结束是到达同样state的时候)
+      * Forcing moves(不得不走的move，但是不一定什么时候走)
+      * Moves may have different strong and weak features which balance each other(不同强度的feature互相抵消)
+    * Different definitons of "Best" move
+
+## Using knowledge in UCT
+  * Use knowledge
+    1. Initialization of node statistics
+    2. Additive knowledge term
+    3. Multiplicative knowledge term
+  * Regular UCT:select best child by UCT formula,count number of simulations and wins
+  * Improvement :Initialize with other non 0 value to encode knowledge about moves
+    1. Initialization of Node statistics
+      * Give good moves some initial wins
+      * Give bad moves some initial losses
+      * Decay over time: Over time, real simulation statistics dominate over initialization
+    2. Additive knowledge
+      * add a term to UCT formula
+      * $UCT(i) = \hat{\mu_i} + \textbf{knowledgeValue(i)} + c\sqrt{\frac{logn_p}{n_i}}$
+      * KnowledgeValue(i) computed from simple features or neural network
+      * Decay over time:must be explicitly programmed
+      * Multiply knowledge term by some decay factor
+    3. Probabilistic UCT
+      * explore promising moves more
+      * $PUCT(i) = \hat{\mu_i} + p_i + c\sqrt{\frac{logn_p}{n_i}}$
+      * Probability $p_i$ that move i is the best
+      * Decay over time:yes, since divide by $n_i$ in the exploration term
+
+  
+  
