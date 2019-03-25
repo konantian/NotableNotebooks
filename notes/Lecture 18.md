@@ -2,7 +2,7 @@
 title: Lecture 18
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-03-25T19:52:21.816Z'
+modified: '2019-03-25T19:55:46.971Z'
 ---
 
 # Lecture 18
@@ -95,13 +95,13 @@ modified: '2019-03-25T19:52:21.816Z'
       * Decay over time: Over time, real simulation statistics dominate over initialization
     2. Additive knowledge
       * add a term to UCT formula
-      * $UCT(i) = \hat{\mu_i} + \textbf{knowledgeValue(i)} + c\sqrt{\frac{logn_p}{n_i}}$
+      * $$UCT(i) = \hat{\mu_i} + \textbf{knowledgeValue(i)} + c\sqrt{\frac{logn_p}{n_i}}$$
       * KnowledgeValue(i) computed from simple features or neural network
       * Decay over time:must be explicitly programmed
       * Multiply knowledge term by some decay factor
     3. Probabilistic UCT
       * explore promising moves more
-      * $PUCT(i) = \hat{\mu_i} + p_i + c\sqrt{\frac{logn_p}{n_i}}$
+      * $$PUCT(i) = \hat{\mu_i} + p_i + c\sqrt{\frac{logn_p}{n_i}}$$
       * Probability $p_i$ that move i is the best
       * Decay over time:yes, since divide by $n_i$ in the exploration term
 
