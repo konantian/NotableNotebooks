@@ -2,7 +2,7 @@
 title: Prolog 2-Built in predicates
 tags: [Notebooks/Cmput 325]
 created: '2019-03-26T21:19:31.847Z'
-modified: '2019-03-26T21:45:41.482Z'
+modified: '2019-03-26T22:18:55.692Z'
 ---
 
 # Prolog 2-Built in predicates
@@ -103,4 +103,75 @@ modified: '2019-03-26T21:45:41.482Z'
   * atomic(X): **true if X is either an atom or a number**
 
 ## Finding all solutions
+  * Basic syntax: 
+  ```prolog
+  findall(Variable,Goal,Solutions).
+  ```
+  * Examples:
+  ```prolog
+  ?- findall(X,member(X,[a,a,b],Result).
+  Result=[a,a,b].
+  ?- findall(take(X),course(X),Courses).
+  Courses = [take(cmput325),take(cmput175)].
+  ?- findall(X,append(X,Y,[a,b,c],Result).
+  Result=[[],[a],[a,b],[a,b,c]].
+  ```
+
+## Data Structures in Prolog
+  * List
+  ```prolog
+  ?- [A|L]=[a,b,c].
+  A=a,
+  L=[b,c].
+  ?- [a,b,X,d|Rest] = [a,b,c,d,e]. 
+  X = c, Rest = [e].
+  ?- [[a,b],c|L] = [a,b,c]. 
+  false.
+  ?- [a,b,c|L] = [a,b,c].
+  L = [].
+  ?- [a|[]] = [a]. 
+  true.
+  ```
+  * Append
+  ```prolog
+  append([], L, L).
+  append([A| L1], L2, [A|L3]) :append(L1, L2, L3).
+
+  ?- append([a1, a2], [b1], A). 
+  A = [a1, a2, b1].
+
+  ?- append([1,2,3], [4,5], [1,2,3,4,5]). 
+  true.
+
+  ?- append([1,2,3], X, [1,3,2|Rest]). 
+  false  .
+
+  ?- append([1,2,3], X, [1,2,3|Rest]). 
+  X = Rest.
+  ```
+  * Member and not_member
+  ```prolog
+  member(X, [X|_]).
+  member(X, [_|L]) :- member(X, L).
+
+  not_member(_, []).
+  not_member(X, [Y|L]) :- X \== Y, not_member(X, L).
+  ```
+
+  * Reverse
+  ```prolog
+  reverse([], []).
+  reverse([A|Rest], Rev) :- reverse(Rest, RevRest), append(RevRest,[A],Rev).
+  ```
+
+  * If-Then-Else
+  ```prolog
+  p(Input, result1) :- test1.
+
+  p(Input, result2) :- opposite-of-test1, test2.
+
+  p(Input, result3) :- opposite-of-test1, opposite-of-test2, test3.
+
+  p(Input, result4) :- opposite-of-test1, opposite-of-test2, opposite-of-test3.
+  ```
 
