@@ -1,11 +1,11 @@
 ---
-title: Prolog 2-Built in predicates
+title: Prolog 2 - Built in predicates
 tags: [Notebooks/Cmput 325]
 created: '2019-03-26T21:19:31.847Z'
-modified: '2019-03-26T22:18:55.692Z'
+modified: '2019-03-27T02:09:21.865Z'
 ---
 
-# Prolog 2-Built in predicates
+# Prolog 2 - Built in predicates
 ## Built-in operators
 ### Arthmetic
   ```prolog

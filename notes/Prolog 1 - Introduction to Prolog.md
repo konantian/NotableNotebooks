@@ -1,11 +1,11 @@
 ---
-title: Prolog 1-Introduction to Prolog
+title: Prolog 1 - Introduction to Prolog
 tags: [Notebooks/Cmput 325]
 created: '2019-03-26T19:19:46.519Z'
-modified: '2019-03-26T21:05:19.190Z'
+modified: '2019-03-27T02:09:26.727Z'
 ---
 
-# Prolog 1-Introduction to Prolog
+# Prolog 1 - Introduction to Prolog
 ## Prolog
   * A Prolog program consistes of clauses
   ```prolog
