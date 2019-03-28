@@ -2,7 +2,7 @@
 title: Final concepts
 tags: [Notebooks/Phil 120]
 created: '2019-03-26T18:31:23.538Z'
-modified: '2019-03-26T19:13:16.950Z'
+modified: '2019-03-28T04:06:08.307Z'
 ---
 
 # Final concepts
@@ -27,8 +27,8 @@ modified: '2019-03-26T19:13:16.950Z'
 ### Quantificationally Consistent
 > A set $\Gamma$of wffs of **_P_** is quantificationally consistent iff there is at least one interpretation on which all members of $\Gamma$ are true. We also say that $\Gamma$ has a model or is modeled. Set is quantificationally inconsistent iff it is not quantificationally consistent.
 
-### Quantificatinally Contingent
-> A wff $\mathbb{P}$ of **_P_** is quantificationally contingent iff **_P_** is neither quantificationally true nor quantificationally false
+### Quantificationally Contingent
+> A wff $\mathbb{P}$ of **_P_** is quantificationally contingent iff $\mathbb{P}$ is neither quantificationally true nor quantificationally false
 
 ### Quantificationally Contradictory Pair of Wffs
 > Wffs $\mathbb{P}$ and $\mathbb{Q}$ of **_P_** are quantificationally contradictory iff there is no interpretation of which they have the same truth value.
@@ -37,7 +37,7 @@ modified: '2019-03-26T19:13:16.950Z'
 > A set $\Gamma$ of wffs of **_P_** quantificationally entails a wff $\mathbb{P}$ iff there is no interpretation on which all the members of $\Gamma$ are true and $\mathbb{P}$ is false.
 
 ### Quantificationally Equivalent Pair of Wffs
-> Wffs $\mathbb{P}$ and $\mathbb{Q}$ of **_P_** are quantificationally equivalent iff there is no interpretation on which they differe in truth value.
+> Wffs $\mathbb{P}$ and $\mathbb{Q}$ of **_P_** are quantificationally equivalent iff there is no interpretation on which they differ in truth value.
 
 ### Quantificationally False Wff
 > A wff $\mathbb{P}$ of **_P_** is quantificationally false iff $\mathbb{P}$ is false on every interpretation
