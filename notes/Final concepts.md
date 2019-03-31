@@ -2,7 +2,7 @@
 title: Final concepts
 tags: [Notebooks/Phil 120]
 created: '2019-03-26T18:31:23.538Z'
-modified: '2019-03-28T04:06:08.307Z'
+modified: '2019-03-31T21:32:03.279Z'
 ---
 
 # Final concepts
@@ -16,7 +16,7 @@ modified: '2019-03-28T04:06:08.307Z'
 > An expression of **_P_** is any finite sequence of the symbols of **_P_**.
 
 ### Open Wff
-> A wff of **_P_** is open iff it contains at least one free occurrence of a variables. Otherwise it is a closed wff.
+> A wff of **_P_** is open iff it contains at least one free occurrence of a variable. Otherwise it is a closed wff.
 
 ### Predicate
 > A predicate is a series of words with one or more blanks that yields a sentence when all its blanks filled with singular terms.
