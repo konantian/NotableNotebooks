@@ -2,7 +2,7 @@
 title: Final concepts
 tags: [Notebooks/Phil 120]
 created: '2019-03-26T18:31:23.538Z'
-modified: '2019-04-01T18:17:32.492Z'
+modified: '2019-04-02T17:26:39.176Z'
 ---
 
 # Final concepts
@@ -64,7 +64,7 @@ modified: '2019-04-01T18:17:32.492Z'
 > An argument of S is truth-functionally valid iff there is no truth value assignment on which all the premises are true and the conclusion is false.
 
 ### Quantifier
-> Where $\mathbb{x}$ ranges over individual variables, expressions of the form($\forall x$)are called universal quantifiers, while expressions of the form($\exist x$) are called existential quantifiers.
+> Where $\mathbb{x}$ ranges over individual variables, expressions of the form($\forall x$) are called universal quantifiers, while expressions of the form($\exist x$) are called existential quantifiers.
 
 ### Bound Variables,Free variable
 > An occurrence of a variable $\mathbb{x}$ in a wff $\mathbb{P}$ is bound iff it is within the scope of an $\mathbb{x}$-quantifier. An occurrence of a variables is free iff it is not bound.
