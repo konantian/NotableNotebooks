@@ -2,7 +2,7 @@
 title: Final concepts
 tags: [Notebooks/Phil 120]
 created: '2019-03-26T18:31:23.538Z'
-modified: '2019-04-02T17:26:39.176Z'
+modified: '2019-04-08T16:07:08.288Z'
 ---
 
 # Final concepts
@@ -13,7 +13,7 @@ modified: '2019-04-02T17:26:39.176Z'
 > A statement is logically false if and only if it is not possible for the statement to be true. Such statements are sometimes called self-contradictions.
 
 ### Logically Contingent
-> A statement is logically contingent if and only if it is neither logically true nor logically false;i.e.
+> A statement is logically contingent if and only if it is neither logically true nor logically false
 
 ### Logically Equivalent
 > A pair of statements is logically equivalent if and only if it is not possible for the statements to have different truth values.
@@ -85,7 +85,7 @@ modified: '2019-04-02T17:26:39.176Z'
 > A wff $\mathbb{P}$ of **_P_** is quantificationally contingent iff $\mathbb{P}$ is neither quantificationally true nor quantificationally false
 
 ### Quantificationally Contradictory Pair of Wffs
-> Wffs $\mathbb{P}$ and $\mathbb{Q}$ of **_P_** are quantificationally contradictory iff there is no interpretation of which they have the same truth value.
+> Wffs $\mathbb{P}$ and $\mathbb{Q}$ of **_P_** are quantificationally contradictory iff there is no interpretation on which they have the same truth value.
 
 ### Quantificationally Entails
 > A set $\Gamma$ of wffs of **_P_** quantificationally entails a wff $\mathbb{P}$ iff there is no interpretation on which all the members of $\Gamma$ are true and $\mathbb{P}$ is false.

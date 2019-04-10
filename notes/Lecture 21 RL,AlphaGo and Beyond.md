@@ -2,7 +2,7 @@
 title: 'Lecture 21 RL,AlphaGo and Beyond'
 tags: [Notebooks/Cmput 496]
 created: '2019-03-29T03:35:41.688Z'
-modified: '2019-03-29T04:35:27.604Z'
+modified: '2019-04-07T07:13:01.290Z'
 ---
 
 # Lecture 21 RL,AlphaGo and Beyond
