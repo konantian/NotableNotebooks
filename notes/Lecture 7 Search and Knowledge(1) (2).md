@@ -1,11 +1,11 @@
 ---
-title: Lecture 7 Search and knowledge(1)
+title: Lecture 7 Search and Knowledge(1)
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T01:59:43.745Z'
-modified: '2019-04-11T03:03:42.349Z'
+modified: '2019-04-11T04:30:10.644Z'
 ---
 
-# Lecture 7 Search and knowledge(1)
+# Lecture 7 Search and Knowledge(1)
 
 ## Blind search VS Heuristic Search
 ### Blind search

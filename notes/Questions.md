@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-11T03:30:31.578Z'
+modified: '2019-04-11T05:08:12.786Z'
 favorited: true
 pinned: true
 ---
@@ -24,3 +24,4 @@ pinned: true
 
 8. In winning stratey, in our turn, how to detect which is a winning move and which is not? Just consider one move or as well as the future?
 
+9. Given candidate minimax value m, in what kind of situations we need only one search?
