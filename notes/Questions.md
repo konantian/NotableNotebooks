@@ -2,7 +2,9 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-10T20:42:22.194Z'
+modified: '2019-04-11T02:22:43.128Z'
+favorited: true
+pinned: true
 ---
 
 # Questions
@@ -17,3 +19,7 @@ modified: '2019-04-10T20:42:22.194Z'
 5. Why single path to each node is advantage?
 
 6. Why dependencies are needed except tree?
+
+7. Is the percentage of program that is speeded up before optimize or after?
+
+
