@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-11T05:08:12.786Z'
+modified: '2019-04-11T18:45:09.500Z'
 favorited: true
 pinned: true
 ---
@@ -25,3 +25,17 @@ pinned: true
 8. In winning stratey, in our turn, how to detect which is a winning move and which is not? Just consider one move or as well as the future?
 
 9. Given candidate minimax value m, in what kind of situations we need only one search?
+
+10. Why alphabeta_depth_limited_tictactoe_test.py is blind search?
+
+11. For PV, if there exist two proof trees, is that guaranted that there exist at least one intersection node for both proof trees?
+
+12. Perfomance of minmax compare to negamax and Alphabeta?
+
+13. Tree estimates is exact at depth 0 ... 5?
+
+14. DAG: No savings at lower levels?
+
+15. Massive savings deeper in DAG, why ?
+
+16. IF strongest move is tried first, alphabeta or negamax, which is more effective?
