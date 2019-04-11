@@ -2,7 +2,7 @@
 title: Lecture 19 Neural Networks(NN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-26T04:21:07.792Z'
-modified: '2019-03-26T17:11:17.788Z'
+modified: '2019-04-11T03:51:57.617Z'
 ---
 
 # Lecture 19 Neural Networks(NN)
@@ -22,7 +22,7 @@ modified: '2019-03-26T17:11:17.788Z'
   * Connections between neurons:
     * Each connection has a weight
     * Expresses the strength of the connection
-    ![Similar Features](@attachment/cmput496/NN.png)
+    ![](https://ws1.sinaimg.cn/large/006tNc79ly1g1yjvoko3ij30dk0f8go6.jpg =250x250)
 
 ### Supervised Training of a Network
   * View the whole network as a function $y=f(x)$
@@ -34,7 +34,7 @@ modified: '2019-03-26T17:11:17.788Z'
 
 ### Sigmoid Function
   * Nonlinear function, popular for activation function
-  ![Similar Features](@attachment/cmput496/sigmoid.png)
+  ![](https://ws3.sinaimg.cn/large/006tNc79ly1g1yjwzjpoij30io08y0to.jpg =400x400)
   * x large negative number: $e^{-x}$ ver large, $\sigma{(x)}$ close to 0
   * x large positive number: $e^{-x}$ ver small, $\sigma{(x)}$ close to 1
 

@@ -2,7 +2,7 @@
 title: Lecture 16 Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-03-24T19:25:15.479Z'
+modified: '2019-04-11T03:54:17.844Z'
 ---
 
 # Lecture 16 Selective search and Monte Carlo Tree Search
@@ -16,7 +16,7 @@ modified: '2019-03-24T19:25:15.479Z'
   * Terminal nodes are true end-of-game
   * Use only exact scores at terminal nodes for evaluation
   * Result is proven correct
-  ![Naive Minimax](@attachment/cmput496/naive_minimax.png)
+  ![](https://ws3.sinaimg.cn/large/006tNc79ly1g1yjyqypylj311g0keqco.jpg =400x400)
 
 **Efficient minimax(or negamx)**
   * Does not visit the whole tree, some parts of the tree may be cut(剪枝一些不好的move)
@@ -24,7 +24,7 @@ modified: '2019-03-24T19:25:15.479Z'
   * Need to try all moves for loser(必须探索所有的child来验证lose)
   * Back up result to root node
     * For alphabeta, some back-up values are “good-enough” upper or lower bounds, not exact values
-  ![Naive Minimax](@attachment/cmput496/efficient_minimax.png)
+  ![](https://ws3.sinaimg.cn/large/006tNc79ly1g1yjz6dq2tj314a0n2gxc.jpg =400x400)
 
 ### Selective Search Solver
 **Depth-limited Alphabeta Search**
@@ -34,7 +34,7 @@ modified: '2019-03-24T19:25:15.479Z'
   * Selective search, exact evaluation of leaves node(evaluation来自于最后一层可以到达的node)
   * Source of error:
     1. Source of error: heuristic evaluation in leaf nodes
-  ![Naive Minimax](@attachment/cmput496/depth_limit.png)
+  ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1yjzgw0gfj313a0i611f.jpg =400x400)
 
 **Selective Alphabeta Search with Fixed Time or Node Budget**
   * Reduce b and d until search fits within budget
@@ -47,7 +47,7 @@ modified: '2019-03-24T19:25:15.479Z'
   * Source of error:
     1. Source of error: heuristic evaluation in leaf nodes
     2. may prune the best move from a node 
-  ![Naive Minimax](@attachment/cmput496/selective_alphabeta.png)
+  ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1yk011j04j30ze0majzf.jpg =400x400)
 
 **Simulation-Based Player**
   * as Selective Minimax Search**

@@ -2,7 +2,7 @@
 title: Lecture 17
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T19:57:59.017Z'
-modified: '2019-03-24T21:56:34.046Z'
+modified: '2019-04-11T03:52:25.781Z'
 ---
 
 # Lecture 17 
@@ -14,7 +14,7 @@ modified: '2019-03-24T21:56:34.046Z'
   * Find similar states,use values of similar states to improve evaluation
     * Similar states: States are similar if they share lots of features or they "point in similar direction"
     * Compare two feature vectors
-    ![Similar Features](@attachment/cmput496/similar_feature.png)
+    ![](https://ws1.sinaimg.cn/large/006tNc79ly1g1yjxzao0yj30du0b6wfh.jpg =250x250)
     * Find similar state in memory
       * Measure: cosine similarity
       * Similarity is 1 if they have same direction(same feature)(如果两个feature一样，则similarity是1)

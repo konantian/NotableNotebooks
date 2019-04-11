@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-11T02:22:43.128Z'
+modified: '2019-04-11T03:30:31.578Z'
 favorited: true
 pinned: true
 ---
@@ -22,4 +22,5 @@ pinned: true
 
 7. Is the percentage of program that is speeded up before optimize or after?
 
+8. In winning stratey, in our turn, how to detect which is a winning move and which is not? Just consider one move or as well as the future?
 
