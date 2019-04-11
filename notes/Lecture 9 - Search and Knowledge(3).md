@@ -2,7 +2,7 @@
 title: Lecture 9 - Search and Knowledge(3)
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T04:29:25.422Z'
-modified: '2019-04-11T19:03:32.113Z'
+modified: '2019-04-11T20:17:52.011Z'
 ---
 
 # Lecture 9 - Search and Knowledge(3)
@@ -29,7 +29,7 @@ modified: '2019-04-11T19:03:32.113Z'
           * If first search return win and second search return lose, minimiax value equal to m
           * If first search return win and second search return win
            minimax value greater than m
-      * Boudn value update during the search
+      * Bound value update during the search
 
   * Boolean searches and proof trees
     * Our winning strategy: achieve at least $m$
@@ -39,11 +39,11 @@ modified: '2019-04-11T19:03:32.113Z'
 ### Alpha beta Search
   * Lower and upper bound ($\alpha,\beta$)
   * Prune a position if its value falls outside the ($\alpha,\beta$)
-    1. $v < \alpha$ we ill avoid this position, need better choice
+    1. $v < \alpha$ we will avoid this position, need better choice
     2. $v > \beta$ opponent will avoid this position, need better choice
     3. $v = \beta$ opponent can also ignore this position
   * Negmax alpha beta
-    1. Everything is from the current player's point of view
+    1. Everything is from the **current player's** point of view
     2. Negate scores when changing from player to opponent on each level
     3. Window ($\alpha,\beta$) becomes ($-\beta,-\alpha$) for opponent(我们想尽可能赢更多，对手希望尽可能损失更少)
     ![](https://ws3.sinaimg.cn/large/006tNc79ly1g1yn0qvvyqj31m60u0dw7.jpg =600x600)
