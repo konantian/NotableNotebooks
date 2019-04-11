@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-11T18:45:09.500Z'
+modified: '2019-04-11T20:02:08.760Z'
 favorited: true
 pinned: true
 ---
@@ -39,3 +39,9 @@ pinned: true
 15. Massive savings deeper in DAG, why ?
 
 16. IF strongest move is tried first, alphabeta or negamax, which is more effective?
+
+17. Why depth-limited search need evaluation function?
+
+18. Why winning strategy does not have to include a move for every state in current play's turn?
+
+19. IS that true that every state in state space has a proof tree or disproof tree?

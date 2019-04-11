@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-11T19:38:58.300Z'
+modified: '2019-04-11T20:05:33.010Z'
 ---
 
 # Quiz Review
@@ -34,15 +34,36 @@ modified: '2019-04-11T19:38:58.300Z'
   :white_check_mark: : Two sequences can start differently but merge later if they reach equivalent states later
   8. In the tree model, two sequences can start differently but merge later.
   :negative_squared_cross_mark: : For any equivalent states in tree, they have unique path from root to it, they cannot merge together
+#### optimization(Lecture 6)
   9. According to Don Knuth, premature optimization is the root of all evil.
   :white_check_mark:
   10. One use of Amdahl's law is to show limits of code optimization. Assume a program spends 90% of its time in one function f. We manage to optimize f, so it now runs 10 times faster. How much faster is the whole program?
   $\frac{1}{(1-0.9)+\frac{0.9}{10}}=5.26$
 
-#### optimization(Lecture 6)
-
 ### Quiz 5
-
+#### minimax search(lecture 7)
+  1. Assume that our alphabeta­based solver has a bug, such that it sometimes does not generate all of our moves. However, it always generates the opponent's moves correctly. Claim: If the search returns a win for us, this result is correct.
+  :white_check_mark: In OR node, one winning move is enough
+  2. Same buggy solver as in Question 01. Claim: If the search returns a loss for us, this result is correct.
+  :negative_squared_cross_mark: Since it cannot generate all of our moves correctly, there might be a winning move in remain moves
+  3. To use depth­limited alphabeta search, we need to have an evaluation function.
+  :white_check_mark: The depth limit has to be determined by the evaluation function
+#### minimax search(2)(lecture 8)
+  4. A winning strategy for a player must specify a move for every state in the whole state space where it is the player's turn.
+  :negative_squared_cross_mark: The winning strategy includes one move when it's our turn and all moves for opponent's turn
+  5. If we follow a winning strategy, we will always end up in a winning terminal position, no matter what the opponent plays.
+  :white_check_mark:
+  6. A proof tree represents a winning strategy.
+  :white_check_mark:
+  7. The same state can have both a proof tree and a disproof tree for the same winning condition.
+  :negative_squared_cross_mark: A state can only have a proof tree **OR** a disproof tree under one winning condition
+  8. The same state can have both a proof tree and a disproof tree if the winning conditions are different.
+  :white_check_mark: Under two winning conditions, a state can have both proof tree and disproof tree
+#### minimax search(3)(lecture 9)
+  9. The best case for boolean minimax search is when it searches the best move last.
+  :negative_squared_cross_mark: The best case is search best move first,and it needs only one search
+  10. In negamax search, the evaluation of all leaf nodes is from the root player's point of view.
+  :negative_squared_cross_mark: Always from the current player's point of view
 ### Quiz 6
 
 ### Quiz 7
