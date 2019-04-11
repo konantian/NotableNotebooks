@@ -1,11 +1,11 @@
 ---
-title: Lecture 14 Statistical Analysis of Repeated Simulations
+title: Lecture 14 - Statistical Analysis of Repeated Simulations
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T23:44:54.014Z'
-modified: '2019-03-24T02:52:11.427Z'
+modified: '2019-04-11T19:03:52.484Z'
 ---
 
-# Lecture 14 Statistical Analysis of Repeated Simulations
+# Lecture 14 - Statistical Analysis of Repeated Simulations
 ## Probabilistic simulation policies
 **Stochastic vs Deterministic simulation policies**
   * Stochastic simulation

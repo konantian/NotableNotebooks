@@ -1,11 +1,11 @@
 ---
-title: Lecture 19 Neural Networks(NN)
+title: Lecture 19 - Neural Networks(NN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-26T04:21:07.792Z'
-modified: '2019-04-11T03:51:57.617Z'
+modified: '2019-04-11T19:03:03.108Z'
 ---
 
-# Lecture 19 Neural Networks(NN)
+# Lecture 19 - Neural Networks(NN)
 ## Neural Networks
 ### Definition:
   * A neural network in computing science is a function. 

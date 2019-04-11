@@ -1,11 +1,11 @@
 ---
-title: Lecture 8 Search and Knowledge(2)
+title: Lecture 8 - Search and Knowledge(2)
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T03:11:31.253Z'
-modified: '2019-04-11T04:30:14.149Z'
+modified: '2019-04-11T19:03:29.110Z'
 ---
 
-# Lecture 8 Search and Knowledge(2)
+# Lecture 8 - Search and Knowledge(2)
 **Solving game**
 > Find the correct outcome of the game with best play by both players
 

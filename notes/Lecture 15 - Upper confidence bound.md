@@ -1,11 +1,11 @@
 ---
-title: Lecture 15 UCB
+title: Lecture 15 - Upper confidence bound
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T02:54:04.851Z'
-modified: '2019-03-24T03:48:48.706Z'
+modified: '2019-04-11T19:02:49.674Z'
 ---
 
-# Lecture 15 UCB
+# Lecture 15 - Upper confidence bound
 ## Mistakes and regret in simulations
 **Mistakes**
   * we will make mistakes since we make decisions based on random experiments
@@ -27,7 +27,8 @@ modified: '2019-03-24T03:48:48.706Z'
 **UCB Formula**
   * UCB stands for upper confidence bound
   * Define Upper Confidence Bound for move i by
-  ![UCB Formula](@attachment/cmput496/UCB_formula.png)
+  $U C B(i)=\hat{\mu_i}+C \sqrt{\frac{\log N}{n_{i}}}$
+  $\text { move }=\underset{i \in \text { moves }}{\arg \max } U C B(i)$
   * C is the exploration constant, larger C require higher confidence level and focus on exploration.Smalle c focus on exploitation
   * When C is very large, UCB becomes very similar to the simple uniform exploration strategy
   * At end: play the most-pulled arm(被拉的最多的杆说明更好)

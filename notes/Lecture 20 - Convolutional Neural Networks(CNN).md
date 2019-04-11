@@ -1,11 +1,11 @@
 ---
-title: Lecture 20
+title: Lecture 20 - Convolutional Neural Networks(CNN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-28T21:18:35.569Z'
-modified: '2019-03-29T03:32:52.344Z'
+modified: '2019-04-11T19:02:38.268Z'
 ---
 
-# Lecture 20 
+# Lecture 20 - Convolutional Neural Networks(CNN)
 ## Convolutional Neural Networks(CNN)
 ### Local Receptive Field
   * Typical sizes 5 x 5, 3 x 3
@@ -29,6 +29,4 @@ modified: '2019-03-29T03:32:52.344Z'
   * Padding: add aritificial outside elements to prevent shrinking
   * Often: fully connected layers at the end of pipeline
 
-## Deep convolutional neural networks for Go
-  
 

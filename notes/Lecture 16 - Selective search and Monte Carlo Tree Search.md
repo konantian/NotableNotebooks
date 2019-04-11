@@ -1,11 +1,11 @@
 ---
-title: Lecture 16 Selective search and Monte Carlo Tree Search
+title: Lecture 16 - Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-04-11T03:54:17.844Z'
+modified: '2019-04-11T19:02:55.188Z'
 ---
 
-# Lecture 16 Selective search and Monte Carlo Tree Search
+# Lecture 16 - Selective search and Monte Carlo Tree Search
 ## Exact Search, Selective Search, and Simulations
 ### Exact Search Solver
 **Naive Minimax (or Negamax)**

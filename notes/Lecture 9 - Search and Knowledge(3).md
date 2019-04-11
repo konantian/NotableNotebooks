@@ -1,11 +1,11 @@
 ---
-title: Lecture 9 Search and Knowledge(3)
+title: Lecture 9 - Search and Knowledge(3)
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T04:29:25.422Z'
-modified: '2019-04-11T05:39:53.213Z'
+modified: '2019-04-11T19:03:32.113Z'
 ---
 
-# Lecture 9 Search and Knowledge(3)
+# Lecture 9 - Search and Knowledge(3)
 
 ### Boolean Minimax search
   * Zero sum: Each point we win, the opponent loses

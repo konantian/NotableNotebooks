@@ -1,11 +1,11 @@
 ---
-title: Lecture 17
+title: Lecture 17 - Memory-Augmented Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T19:57:59.017Z'
-modified: '2019-04-11T03:52:25.781Z'
+modified: '2019-04-11T19:01:48.327Z'
 ---
 
-# Lecture 17 
+# Lecture 17 - Memory-Augmented Monte Carlo Tree Search
 ## Memory-Augmented Monte Carlo Tree Search
   * Solve problem of MCTS
     1. Most nodes are leaves or near leaf

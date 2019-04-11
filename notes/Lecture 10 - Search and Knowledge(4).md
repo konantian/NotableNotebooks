@@ -1,11 +1,11 @@
 ---
-title: Lecture 10 Search and Knowledge(4)
+title: Lecture 10 - Search and Knowledge(4)
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T04:29:41.303Z'
-modified: '2019-04-11T18:55:01.613Z'
+modified: '2019-04-11T19:03:36.148Z'
 ---
 
-# Lecture 10 Search and Knowledge(4)
+# Lecture 10 - Search and Knowledge(4)
 ### Principle Variation(PV)
   * If both players play best moves, they follow a principal variation or PV of the search
   * This is a move sequence with the property that each node in the sequence has a score of m

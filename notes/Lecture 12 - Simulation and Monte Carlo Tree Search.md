@@ -1,11 +1,11 @@
 ---
-title: Lecture 12 Simulation and Monte Carlo Tree Search
+title: Lecture 12 - Simulation and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T02:32:16.065Z'
-modified: '2019-03-23T22:20:12.548Z'
+modified: '2019-04-11T19:03:46.805Z'
 ---
 
-# Lecture 12 Simulation and Monte Carlo Tree Search
+# Lecture 12 - Simulation and Monte Carlo Tree Search
 ## Monte Carlo Simulation
 **Simulation**
 > Simulation is the imitation of the operation of a real-world process or system over time

@@ -1,11 +1,11 @@
 ---
-title: Lecture 13 Understanding and improving simulations in Go
+title: Lecture 13 - Understanding and improving simulations in Go
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T22:22:16.623Z'
-modified: '2019-03-23T23:31:43.639Z'
+modified: '2019-04-11T19:03:49.532Z'
 ---
 
-# Lecture 13 Understanding and improving simulations in Go
+# Lecture 13 - Understanding and improving simulations in Go
 ## Uniformly random simuluations
 **Strengths**
   1. Can find many simple tactics

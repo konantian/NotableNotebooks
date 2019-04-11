@@ -1,11 +1,11 @@
 ---
-title: Lecture 18
+title: Lecture 18 - Machine learning and UCT
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-03-25T19:55:46.971Z'
+modified: '2019-04-11T19:02:14.413Z'
 ---
 
-# Lecture 18
+# Lecture 18 - Machine learning and UCT
 ## Machine learning with simple features
 ### Simple Features
   * boolean-valued statement about a move

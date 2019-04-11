@@ -1,11 +1,11 @@
 ---
-title: Lecture 5 Sequential decision-making Review
+title: Lecture 5 - Sequential decision-making Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T21:39:58.175Z'
-modified: '2019-04-10T22:58:08.635Z'
+modified: '2019-04-11T19:03:18.142Z'
 ---
 
-# Lecture 5 Sequential decision-making Review
+# Lecture 5 - Sequential decision-making Review
 ## Decrease branching factor b
 ### Use symmetry
   * Symmetries at level 1

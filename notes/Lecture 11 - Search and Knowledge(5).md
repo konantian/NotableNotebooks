@@ -1,11 +1,11 @@
 ---
-title: Lecture 11 Search and Knowledge(5)
+title: Lecture 11 - Search and Knowledge(5)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T03:59:23.276Z'
-modified: '2019-04-11T02:00:28.042Z'
+modified: '2019-04-11T19:03:43.579Z'
 ---
 
-# Lecture 11 -- Search and Knowledge(5)
+# Lecture 11 - Search and Knowledge(5)
 ## Knowledge in heuristic search
 **Knowledge using in Heuristic Search**
   * Evaluate states

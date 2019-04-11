@@ -1,11 +1,11 @@
 ---
-title: 'Lecture 6 Profiling python3 code, improving the performance'
+title: 'Lecture 6 - Profiling python3 code, improving the performance'
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T00:55:23.350Z'
-modified: '2019-04-11T01:57:59.496Z'
+modified: '2019-04-11T19:03:21.978Z'
 ---
 
-# Lecture 6 Profiling python3 code, improving the performance
+# Lecture 6 - Profiling python3 code, improving the performance
 ### Limits of Optimization
   * 80% of the improvement can come from 20% of the code
   * Amdahl's Law 

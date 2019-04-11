@@ -1,11 +1,11 @@
 ---
-title: Lecture 4 Decision Making Review
+title: Lecture 4 - Decision Making Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T18:34:07.765Z'
-modified: '2019-04-10T21:40:34.699Z'
+modified: '2019-04-11T19:03:09.414Z'
 ---
 
-# Lecture 4 Decision Making Review
+# Lecture 4 - Decision Making Review
 
 ## Decision making
 ### Tasks involve only the present
