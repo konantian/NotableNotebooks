@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-11T20:02:08.760Z'
+modified: '2019-04-12T02:31:11.896Z'
 favorited: true
 pinned: true
 ---
@@ -45,3 +45,14 @@ pinned: true
 18. Why winning strategy does not have to include a move for every state in current play's turn?
 
 19. IS that true that every state in state space has a proof tree or disproof tree?
+
+20. What's the mean of variance and bias in monto carlo simulations?
+
+21. Why using random simulaitons is much less natural and it still works well on games without chance element?
+
+22. Why shuffle once is not enough in Go?
+
+23. In depth-limited search, how heuristic evaluation funciton works?
+
+24. Why Sim(1000) can have better performance than perfect in TictacToe? How about other games?
+

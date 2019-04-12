@@ -2,7 +2,7 @@
 title: Lecture 12 - Simulation and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T02:32:16.065Z'
-modified: '2019-04-11T19:03:46.805Z'
+modified: '2019-04-12T02:25:07.381Z'
 ---
 
 # Lecture 12 - Simulation and Monte Carlo Tree Search
@@ -13,15 +13,18 @@ modified: '2019-04-11T19:03:46.805Z'
 **Monte Carlo simulation**
 > Learn information from random sequences of decision steps
 
+**Flat Monte Carlo**
+> The method based on 1-ply lookahead + simulations is sometimes called **_Flat Monte Carlo_**. Flat means does not build a deep tree.
+
 **Monte Carlo Sampling**
   * Advantages:
     1. General method
     2. No assumptions on type of funciton
     3. Fast method
   * Disadvantages: 
-    1. Convergence of the basic method is slow
-    2. High variance(but not bias)
-    3. Coulde be faster if the funciton is smoothness
+    1. Convergence of the basic method is slow(收敛很慢)
+    2. **High variance(but not bias)**
+    3. Could be faster if the funciton is smoothness
     4. Fall-back for cases without nice structure
 
 ## Simulation model
@@ -31,9 +34,10 @@ modified: '2019-04-11T19:03:46.805Z'
 
 **Games with Chance elements**
   * Using random simulations is a natural idea
+  * Backgammon was also an early success story for neural networks
 
 **Games without chance element**
-  * Using random simulaitons is much less natrual
+  * Using random simulaitons is much less natural
   * Often, it works very well
   * TicTacToe
     * Form given states, finish game with moves selected uniformly at random
@@ -50,11 +54,11 @@ modified: '2019-04-11T19:03:46.805Z'
 
 ## Use Simulations as Evaluation funciton
 **Evaluate a state**
-  * Exact answer:
+  * **Exact answer:**
     1. Run solver
     2. Compute minimax value
     3. Negmax and alphabeta
-  * Heuristic:
+  * **Heuristic(estimate):**
     1. Depth-limited alphabeta search
     2. Run simulations,score the final result
 
@@ -64,6 +68,7 @@ modified: '2019-04-11T19:03:46.805Z'
     1. Run n simulations
     2. Measure the winrate
   3. After all simulations play move with highest winrate
+  ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1zn1bygwbj30xs0n4n4i.jpg =300x300)
 
 **Compare between simpulation player and perfect player**
   * Sim(100)

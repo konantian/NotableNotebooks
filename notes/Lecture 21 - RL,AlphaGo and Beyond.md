@@ -1,11 +1,11 @@
 ---
-title: 'Lecture 21 RL,AlphaGo and Beyond'
+title: 'Lecture 21 - RL,AlphaGo and Beyond'
 tags: [Notebooks/Cmput 496]
 created: '2019-03-29T03:35:41.688Z'
-modified: '2019-04-07T07:13:01.290Z'
+modified: '2019-04-11T21:10:48.023Z'
 ---
 
-# Lecture 21 RL,AlphaGo and Beyond
+# Lecture 21 - RL,AlphaGo and Beyond
 ### Basic Concepts of RL
   * Observe input(state of game)
   * Produce move,action

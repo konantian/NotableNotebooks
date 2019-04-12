@@ -2,7 +2,7 @@
 title: Lecture 11 - Search and Knowledge(5)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T03:59:23.276Z'
-modified: '2019-04-11T19:03:43.579Z'
+modified: '2019-04-11T21:22:35.390Z'
 ---
 
 # Lecture 11 - Search and Knowledge(5)
@@ -14,7 +14,7 @@ modified: '2019-04-11T19:03:43.579Z'
 **Interpretations of knowledge**
   * Probabilities(概率更大的move会更容易被选到)
   * Preferences(优先级更高的move会更容易被选到)
-  * Ordering
+  * Ordering(更好的move越靠前)
   * Ranking
 
 **Representing knowledge**
@@ -46,7 +46,7 @@ modified: '2019-04-11T19:03:43.579Z'
   * Interpretation
     * Number: Represent the value of this state,used for **relative ranking** of state
     * Probability: Represent the probability that this state is the best state
-  * Exact evaluation for leaf nodes and heuristic evaluation of non-terminal states(通过计算leaf node的价值回传给上面👆的node来计算别的node的价值)
+  * Exact evaluation for leaf nodes and heuristic evaluation of non-terminal states(通过计算leaf node的价值回传给上面👆的node来计算别的node的价值。leaf node的值计算是准确的，但是非terminal state的值得计算是启发式的，不精确的)
 
 
 **Move Evaluation**
@@ -59,13 +59,13 @@ modified: '2019-04-11T19:03:43.579Z'
     * Probability: Represent the probability that this move is the best move
 
 **Evaluation Interpretation**
-  * Similar evaluation values for similar states
-  * All states with the same evaluation are "equally good"
+  * **Similar evaluation values for similar states**
+  * **All states with the same evaluation are "equally good"**
   * Same probability of winning for equally good states
   * Higher evaluation = higher probability of winning
 
 **Winning Probability interpretation**
-  * Winning probability is the minimax score
+  * **Winning probability is the minimax score**
   * Pefect player would know the certainty of the winning probability
   * Can use machine learning estimates of win probabilities
 
