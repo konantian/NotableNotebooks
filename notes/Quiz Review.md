@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T06:49:02.530Z'
+modified: '2019-04-12T20:07:22.860Z'
 ---
 
 # Quiz Review
@@ -226,7 +226,7 @@ modified: '2019-04-12T06:49:02.530Z'
   9. Machine learning sometimes works with raw input data, so we do not always need to develop other input features.
   :white_check_mark:  **Raw input in neural network**
   10. In a linear model, weights represent the strength of connection between features.
-  :x:
+  :x: **Weights reprensent the strength of the feature, larger weight means better feature**
 ### Quiz 11
 
 ### Quiz 12
