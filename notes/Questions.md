@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-12T02:31:11.896Z'
+modified: '2019-04-12T04:31:57.560Z'
 favorited: true
 pinned: true
 ---
@@ -55,4 +55,6 @@ pinned: true
 23. In depth-limited search, how heuristic evaluation funciton works?
 
 24. Why Sim(1000) can have better performance than perfect in TictacToe? How about other games?
+
+25. Why deterministic simulations are not better than random one?
 

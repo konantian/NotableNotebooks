@@ -2,7 +2,7 @@
 title: Lecture 14 - Statistical Analysis of Repeated Simulations
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T23:44:54.014Z'
-modified: '2019-04-11T19:03:52.484Z'
+modified: '2019-04-12T04:19:37.392Z'
 ---
 
 # Lecture 14 - Statistical Analysis of Repeated Simulations
@@ -16,6 +16,10 @@ modified: '2019-04-11T19:03:52.484Z'
   * Deterministic
     1. All simulations from same start state play the same sequence, have the same result
 
+**Variance and Bias**
+  * Vairance can be reduced by getting move samples
+  * Bias will repeat exactly the same in each try
+
 **Probabilistic simulation**
   * Play pattern moves with higher probability
   * Play other moves with smaller probability
@@ -26,7 +30,18 @@ modified: '2019-04-11T19:03:52.484Z'
 **Uniforum random**
   * Each move has same probability
 
+**Rule based policy**
+  * n possible moves
+  * $m<=n$ of them selected by a rule or pattern
+  * Each chosen with probability $\frac{1}{m}$
+  * All $n-m$ other moves have probability 0
+
 ## Statistical Analysis of Repeated Simulations
+**UCB**
+  * Explore all moves in the beginning
+  * Focus much more on a few highest-percentage moves soon
+  * This leads to better decisions, less wasted time
+
 **Borel's Law of Large Numbers**
   * Repeating experiments many times will get results close to expectation
   * This estimate will be very rough when n is small(当n很小的时候，结果往往不准确)
@@ -35,13 +50,14 @@ modified: '2019-04-11T19:03:52.484Z'
 **Bernouli Experiment**
   * Random experiment, typically repeated many times, same fixed p
   * Each single experiment draws from Bernouli distribution for p
-  * Simulation is a Bernouli Experiment
+  * **Simulation is a Bernouli Experiment**
     1. Finite tree
     2. Finitely many leaves
     3. Finitely many paths to leaves
     4. Each leaf has fixed value 0(和局) or 1(赢）
     5. In each node, the simulaiton policy has a fixed distribution over its children
     6. The winning probability at the root is just the probability of choosing a path leading to a win
+    
 **Flat simulation player(1 ply tree)**
   * If we increase n run more and more simulations, the winrate for c will stabilize
   * Winrate will converge to the "true winrate"

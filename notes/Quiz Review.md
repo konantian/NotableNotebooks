@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T03:08:09.702Z'
+modified: '2019-04-12T04:33:40.127Z'
 ---
 
 # Quiz Review
@@ -138,7 +138,28 @@ modified: '2019-04-12T03:08:09.702Z'
   :x: **It is true in Tictactoe but not Go**
 
 ### Quiz 8
-
+#### Improving simulaitons with rules and patterns(Lecture 13)
+  1. Our scaling experiment against the Go2 random player showed that the simulation­based player Go3 with 100 simulations is clearly better than with 50 simulations.
+  :x: **Go3 with 100 simulations has same performance with simulations with 50**
+  2. A strength of Go3 is that it avoids making silly threats.
+  :x: **Go3 still play threat moves,it's just simulations based player**
+  3. During its simulations, Go3 models its opponent as another simulation­based player.
+  :x: **Go3 models it's opponent as random player**
+  4. In one example, Go3 found that it needed to make two eyes, without having any special knowledge about how to make eyes.
+  :white_check_mark: **Since making two eyes will given highest winrate**
+  5. An ideal simulation policy would always win from a start state that is winning and lose from a start state that is losing.
+  :white_check_mark:
+  6. In simulations, low variance is more important than low bias.
+  :x: **Low bias is much more important than low vairance**
+  7. In selfatari, a player removes the last liberty of their own stones.
+  :x: **In selfatari a player play a move return own stones to one liberty**
+#### Probabilistic simulation policies(Lecture 14)
+  8. Deterministic simulations are better than random ones.
+  :x: **Deterministic simulaitons are not better than random ones**
+  9. A rule­based simulation policy can also be viewed as a probabilistic policy.
+  :white_check_mark: **Because it plays pattern moves with higher probability and plays other moves with smaller probability**
+  10. When developing probabilistic simulation policies, the probabilities are usually determined by using machine learning.
+  :white_check_mark:
 ### Quiz 9
 
 ### Quiz 10
