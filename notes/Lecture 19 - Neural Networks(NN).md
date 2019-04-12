@@ -2,7 +2,7 @@
 title: Lecture 19 - Neural Networks(NN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-26T04:21:07.792Z'
-modified: '2019-04-11T19:03:03.108Z'
+modified: '2019-04-12T22:10:39.379Z'
 ---
 
 # Lecture 19 - Neural Networks(NN)
@@ -11,7 +11,7 @@ modified: '2019-04-11T19:03:03.108Z'
   * A neural network in computing science is a function. 
   * It takes input(s) and produces output(s).
   * It has many parameters(weights) which are determined by learning(training).
-  * Deep neural networks can approximate(almost) any function in practice
+  * **Deep neural networks can approximate(almost) any function in practice**
   * Training NN:
     * Supervised learning
     * Reinforcement learning
@@ -19,10 +19,13 @@ modified: '2019-04-11T19:03:03.108Z'
 ### Neural network in computing science
   * Massively simplified, abstract model
   * Used as a powerful function approximator for(almost) arbitrary functions
+  * Single neuron: Implements a simple mathematical function from it's inputs to its output
   * Connections between neurons:
     * Each connection has a weight
     * Expresses the strength of the connection
     ![](https://ws1.sinaimg.cn/large/006tNc79ly1g1yjvoko3ij30dk0f8go6.jpg =250x250)
+  * Nonlinear actinvation function $\phi$
+  * Output used as input for neurons on next layer
 
 ### Supervised Training of a Network
   * View the whole network as a function $y=f(x)$
@@ -43,10 +46,21 @@ modified: '2019-04-11T19:03:03.108Z'
 
   * 反向传播要求有对每个输入值想得到的已知输出，来计算损失函数梯度。因此，它通常被认为是一种监督式学习方法，虽然它也用在一些无监督网络（如自动编码器）中。它是多层前馈网络的Delta规则的推广，可以用链式法则对每层迭代计算梯度。反向传播要求人工神经元（或“节点”）的激励函数可微。
 
+  * Error:$E=\sum_{i}\left(y_{i}-f\left(x_{i}\right)\right)^{2}$
+
   * Gradient descent in back propagation:
-      * Choice of step size $\epsilon$ is important
-      * Go too far($\epsilon$ too large) - overshoot the minimum
-      * Go too little($\epsilon$ too small) - very slow decrease of E
+    * Choice of step size $\epsilon$ is important
+    * Go too far($\epsilon$ too large) - overshoot the minimum
+    * Go too little($\epsilon$ too small) - very slow decrease of E
+  * Partial Derivative - Intuition
+    * $\frac{\partial E}{\partial w_{i}}>0$ - Small decrease in $w_i$ will decrease E
+    * $\frac{\partial E}{\partial w_{i}}=0$ - Small change in $w_i$ will have no effect on E
+    * $\frac{\partial E}{\partial w_{i}}<0$ - Small increase in $w_i$ will decrease E
+    * Partial derivative qunatifier the effect of **leaving everything else constant**
+
+### Chain Rule
+  * $z=f(x), y=g(z)=g(f(x))$ -> $\frac{\partial y}{\partial x}=\frac{\partial y}{\partial z} \times \frac{\partial z}{\partial x}$
+
 
 ### Activation function
   * In artificial neural networks, the activation function of a node defines the output of that node, or "neuron," given an input or set of inputs. This output is then used as input for the next node and so on until a desired solution to the original problem is found.
@@ -64,7 +78,7 @@ modified: '2019-04-11T19:03:03.108Z'
     * LSTM(Long short-term memory) 
 
 ### Nerual Networks as Universal Approximators
-> NN with at least one hidden layer can approximate any continuous function arbitrarily well, given eought neurons in the hidden layer
+> NN with at least one hidden layer can approximate any continuous function arbitrarily well, given enough neurons in the hidden layer
 
   * Does not mean approximate **_any_** function well
   * By adding more and more hidden neurons, we can make the rror smaller and smaller

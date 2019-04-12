@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T20:07:22.860Z'
+modified: '2019-04-12T22:25:51.700Z'
 ---
 
 # Quiz Review
@@ -228,5 +228,36 @@ modified: '2019-04-12T20:07:22.860Z'
   10. In a linear model, weights represent the strength of connection between features.
   :x: **Weights reprensent the strength of the feature, larger weight means better feature**
 ### Quiz 11
-
+#### Neural Network(Lecture 19)
+  1. A neural network in Computing Science is a pretty accurate model of a neural network in the human brain.
+  :x: **It is an approximate model not accurate**
+  2. Synapses are smaller nerve cells which transmit information between neurons.
+  :x: **Synapses are gap between nurons, not nerve cells**
+  3. Most synapses transmit information only via electrical currents.
+  :x: **Sometimes via chemicals as well**
+  4. Humans have far more neurons than any animal.
+  :x: **Elephant has more neurons than human**
+  5. In the usual neural network architectures in computing science, all connections are between one layer of neurons and the next.
+  :white_check_mark:
+  6. A network can be trained by changing its weights to reduce the errors in the output.
+  :white_check_mark:
+  7. In the sigmoid function, if x is a large negative number, the value sigma(x) is close to 1.
+  :x: **X close to 0**
+  8. The sigmoid function is upper bounded by 1.
+  :white_check_mark:
+  9. There are different types of activation functions, but their most important property is that they are all linear.
+  :x: **Some activation functions are not linear**
+  10. In backpropagation, the amount of weight changes is computed from the partial derivatives of the error function.
+  :white_check_mark:
+  11. The chain rule simplifies the computation of the gradients of all weights in backprop.
+  :white_check_mark:
+  12. In Recurrent Neural Networks, the connection between neurons is changed from a tree structure to a DAG.
+  :x: **From a tree to a DCG**
+  13. In theory, Neural Networks with one hidden layer exist which can approximate any continuous function arbitrarily well.
+  :white_check_mark:
+  14. In the fully connected architecture, each neuron in a neural network is connected to each other neuron.
+  :x: **Each neuron on layer n connected to each neuron on layer n+1**
+#### Deep Learning(Lecture 20)
+  15. A Convolutional NN is an example of a sparse NN.
+  :white_check_mark:
 ### Quiz 12
