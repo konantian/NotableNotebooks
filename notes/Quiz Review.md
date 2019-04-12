@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T22:25:51.700Z'
+modified: '2019-04-12T23:20:15.854Z'
 ---
 
 # Quiz Review
@@ -260,4 +260,13 @@ modified: '2019-04-12T22:25:51.700Z'
 #### Deep Learning(Lecture 20)
   15. A Convolutional NN is an example of a sparse NN.
   :white_check_mark:
+  16. Deep Convolutional NN typically use a fully connected layer at the start of the processing pipeline.
+  :x: **Use fully connected layer at the end of pipeline**
+  17. The derivative for a ReLU Activation Function is simpler to compute than for a sigmoid function.
+  :white_check_mark:
+  18. Compared to move evaluation with simple features, Deep Convolutional NN typically return a larger number of good moves for one input position.
+  :x: **DCNN focused on very small number of moves**
+  19. The first Deep Convolutional NN trained by DeepMind was both deeper and larger than the net developed by Clark and Storkey.
+  20. Consider the first Deep Convolutional NN developed by DeepMind, as described in the paper by Maddison, Huang, Sutskever and Silver. Claim: without any search, this network could win a majority of games against strong open source MCTS programs which ran 10000 simulations per move.
+  :x: 
 ### Quiz 12
