@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T06:03:08.549Z'
+modified: '2019-04-12T06:49:02.530Z'
 ---
 
 # Quiz Review
@@ -206,7 +206,27 @@ modified: '2019-04-12T06:03:08.549Z'
   20. Selecting the move to be played after a search according to highest winrate is the most popular method in MCTS.
   :x: **The most popular method in MCTS is according to the visit count**
 ### Quiz 10
-
+#### Machine learing introduction(Lecture 17)
+  1. Assume we have already learned a move generation policy. Then it is easy to convert this policy into a state evaluation function.
+  :x: **policy cannot be converted to evaluation function**
+  2. Tabular learning can be used to improve some game­playing programs.
+  :white_check_mark: 
+  3. To get good results for move prediction in Go, a learning program must be able to generalize from the given training data.
+  :white_check_mark: 
+  4. Unsupervised learning is learning without training data.
+  :x: **Unsupervised learning is learning without label on training data**
+  5. A rule of thumb is to re­use 10% of your training data as test data.
+  :x: **Use 10% of data from the original dataset as test data**
+  6. Overfitting can be caused by the learning algorithm being confused by the noise in the training data.
+  :white_check_mark: 
+  7. Overfitting means that the learned function over­specializes to the training data.
+  :white_check_mark: 
+  8. In linear regression we try to fit the training data as well as possible to a given line.
+  :x: **We try to find best function to approximate the data**
+  9. Machine learning sometimes works with raw input data, so we do not always need to develop other input features.
+  :white_check_mark:  **Raw input in neural network**
+  10. In a linear model, weights represent the strength of connection between features.
+  :x:
 ### Quiz 11
 
 ### Quiz 12

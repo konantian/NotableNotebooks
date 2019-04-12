@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-12T06:01:26.298Z'
+modified: '2019-04-12T06:15:21.131Z'
 favorited: true
 pinned: true
 ---
@@ -66,4 +66,5 @@ pinned: true
 
 29. In the root of a tree of depth 1, why UCT and UCB are same?
 
+30. How to solve the first problem of MCTS?
 
