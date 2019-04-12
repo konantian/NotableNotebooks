@@ -2,7 +2,7 @@
 title: Lecture 16 - Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-04-11T19:02:55.188Z'
+modified: '2019-04-12T05:37:41.804Z'
 ---
 
 # Lecture 16 - Selective search and Monte Carlo Tree Search
@@ -37,7 +37,7 @@ modified: '2019-04-11T19:02:55.188Z'
   ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1yjzgw0gfj313a0i611f.jpg =400x400)
 
 **Selective Alphabeta Search with Fixed Time or Node Budget**
-  * Reduce b and d until search fits within budget
+  * **Reduce b and d until search fits within budget**
 
 **Selective Alphabeta Search**
   * Does not consider all legal moves of each node, similiar with depth-limited
@@ -46,11 +46,11 @@ modified: '2019-04-11T19:02:55.188Z'
   * Search “interesting” moves much deeper than others
   * Source of error:
     1. Source of error: heuristic evaluation in leaf nodes
-    2. may prune the best move from a node 
+    2. may prune the best move from a node --- **MCTS was the first approach that worked well that keep best move**
   ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1yk011j04j30ze0majzf.jpg =400x400)
 
 **Simulation-Based Player**
-  * as Selective Minimax Search**
+  * as Selective Minimax Search
     * Extreme case of selective search
     * Simulation-based player with one simulation per move
     * Branching factor b at root and 1 at all later levels(每层只有一个move候选)
@@ -58,6 +58,7 @@ modified: '2019-04-11T19:02:55.188Z'
     * Eventually samples all nodes in the full tree infinitely often
     * With selective policy samples some subtree infinitely often
   * Uniform Random Simulation policy
+    * **Selective search**
     * Eventually all nodes will be visited
     * Backup result to root node
       * Max at root only
@@ -83,6 +84,7 @@ modified: '2019-04-11T19:02:55.188Z'
 ## Monte Carlo Tree Search
 ### Model
   1. **Selection** - traverse existing tree using formula such as UCT to select a child in each node
+    * Much deeper search for moves with better win rates
     * Run as many iterations of MCTS as you can
     * Then select move to play at root
     * Select child
@@ -112,8 +114,9 @@ modified: '2019-04-11T19:02:55.188Z'
   * Stores winrate statistics in each node, used for child selection
 
 ### From UCB to UCT
-  * UCB: uses global count of all simulations N
-  * UCT: uses simulaiton count of parent np
+  * UCB: uses **global count** of all simulations N
+  * UCT: uses **simulaiton count** of parent $n_p$
   * For root, UCT is identical to UCB(分母都是1，而且只有root一个node)
+  $U C T(i)=\hat{\mu}_{i}+C \sqrt{\frac{\log n_p}{n_i}}$
 
 

@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-12T04:31:57.560Z'
+modified: '2019-04-12T06:01:26.298Z'
 favorited: true
 pinned: true
 ---
@@ -57,4 +57,13 @@ pinned: true
 24. Why Sim(1000) can have better performance than perfect in TictacToe? How about other games?
 
 25. Why deterministic simulations are not better than random one?
+
+26. What's the extreme case for selective minimax search?
+
+27. Why run one simulations in root node of MCTS? More simulations?
+
+28. Steps shoudld be done during each iteration of middle of MCTS? Why backpropagation?
+
+29. In the root of a tree of depth 1, why UCT and UCB are same?
+
 

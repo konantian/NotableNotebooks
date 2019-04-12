@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T04:33:40.127Z'
+modified: '2019-04-12T06:03:08.549Z'
 ---
 
 # Quiz Review
@@ -161,7 +161,50 @@ modified: '2019-04-12T04:33:40.127Z'
   10. When developing probabilistic simulation policies, the probabilities are usually determined by using machine learning.
   :white_check_mark:
 ### Quiz 9
+#### UCB and monto carlo tree search(Lecture 16)
+  1. The main idea of selective game tree search is to increase the branching factor of the search.
+  :x: **Selective game tree is for reduce the branching factor**
+  2. All selective search algorithms require game­specific knowledge for move selection.
+  :x: **They does not require knowledge of game specific**
+  3. Selective alphabeta search works well in Go.
+  :x: **Usually, only 1-10 moves of all moves are good**
+  4. Given a (b,d) tree with b=10, d=5 and a simple simulation­based player which selects moves uniformly at random. Let n be one leaf node in the tree. What is the probability of a single simulation reaching n?
+  5. In simulation­based players, the average value of a small number of good moves is usually closer to the true min or max than the average value of all moves.
+  :white_check_mark:
+#### Probabilistic simulation policies(Lecture 14)
+  6. In a Bernoulli distribution with p = 0.6, the outcome 0 (loss) is at least as likely as the outcome 1 (win).
+  :x: **The probability of win is $1-0.6 = 0.4$**
+  7. Assume that in a Bernoulli experiment we get 60 wins out of 100 tries. Then p = 0.6 .
+  :x: **P is unknown, we only can approximate p but never get close to the real value**
+  8. Given a Bernoulli experiment with p = 0.98 . Then it is possible that we get 0 wins out of 5 tries.
+  :white_check_mark:
+  9. We have seen that running a simulation­based player, with a fixed simulation policy from a fixed Go position gives a Bernoulli experiment with some probability p.
 
+  Now we change the experiment by sampling the Go position uniformly at random from the set of all legal Go positions in each round. What happens?
+  **This is another Bernoulli experiment, but possibly with a diﬀerent probability p'.**
+  10. Running more simulations reduces the bias but not the variance.
+  :x: **Runing more simulations reduce variance but not bias**
+  11. The confidence interval is the smallest interval which contains the true value.
+  :x: **Confidence interval is the range in which the true value is estimated to be,but not smallest range**
+  12. The confidence level measures how likely we are to win a Bernoulli experiment.
+  :x: **Confidence level is probability that the range contains the true value**
+#### UCB(Lecture 16)
+  13. The UCB algorithm selects the move with largest confidence interval.
+  :x: **UCB selects moves with most visited**
+  14. The UCT algorithm decides how to grow its game tree by using the statistics from previous simulations.
+  :white_check_mark: **It using the statistics about the visit count and win rate**
+  15. Both UCB and UCT try to balance Exploration and Exploitation.
+  :x: **We need both exploration and exploitation**
+  16. Assume we are in the middle of a Monte Carlo Tree Search, which uses simulations, and have already expanded the tree a bit. Of the four steps in Monte Carlo Tree Search, which steps have to be done in every further iteration?
+  **Selection Simulation Backpropagation**
+  17. In regular MCTS, we do not store the states reached during the default policy phase. What would happen for a complex search problem if we would store them in the tree as well?
+  **We would run out of memory quickly, Most of those states would be useless since they are never reached again, The shape of the tree would become extremely unbalanced**
+  18. In the root of a tree of depth 1, the UCT formula is identical to the UCB formula.
+  :white_check_mark: 
+  19. The Max­Robust child move selection method sometimes extends the search to decide the move to play.
+  :white_check_mark: **We need to determine better move between move with higher winrate and more visited count if two moves are different**
+  20. Selecting the move to be played after a search according to highest winrate is the most popular method in MCTS.
+  :x: **The most popular method in MCTS is according to the visit count**
 ### Quiz 10
 
 ### Quiz 11

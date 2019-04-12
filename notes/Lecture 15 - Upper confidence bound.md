@@ -2,7 +2,7 @@
 title: Lecture 15 - Upper confidence bound
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T02:54:04.851Z'
-modified: '2019-04-11T19:02:49.674Z'
+modified: '2019-04-12T04:57:23.312Z'
 ---
 
 # Lecture 15 - Upper confidence bound
@@ -17,19 +17,18 @@ modified: '2019-04-11T19:02:49.674Z'
       * Regret > 0 if you don't
       * Can try out arms for free
       * Evaluate how bad our move choice j is compared to best choice i
+      * Make more sense in simulations since we have no cost in trying anything.
     3. Cumulative regred(used in UCB)
       * Each arm pull costs money
       * Regret pi-pj for every pull of an arm j
-      * UCB is designed to minimize cumulative regret
+      * **UCB is designed to minimize cumulative regret**
 
 ## UCB Algorithm
-
 **UCB Formula**
   * UCB stands for upper confidence bound
   * Define Upper Confidence Bound for move i by
-  $U C B(i)=\hat{\mu_i}+C \sqrt{\frac{\log N}{n_{i}}}$
-  $\text { move }=\underset{i \in \text { moves }}{\arg \max } U C B(i)$
-  * C is the exploration constant, larger C require higher confidence level and focus on exploration.Smalle c focus on exploitation
+  $U C B(i)=\hat{\mu_i}+C \sqrt{\frac{\log N}{n_{i}}}$ $\text { move }=\underset{i \in \text { moves }}{\arg \max } U C B(i)$
+  * C is the exploration constant, larger c require higher confidence level and focus on exploration.Smalle $c$ focus on exploitation(c越大，会更多探索，c越小，会更多选择当前已知最好的move)
   * When C is very large, UCB becomes very similar to the simple uniform exploration strategy
   * At end: play the most-pulled arm(被拉的最多的杆说明更好)
 
@@ -44,5 +43,15 @@ modified: '2019-04-11T19:02:49.674Z'
 **Optimism in the Face of Uncertainty**
   * Principle of **optimism in the fact of uncertanty**:assume the best plausible outcome for each move
   * Upper confidence bound represents the best plausible value of a move
+
+**Strengths and limitations of UCB**
+  * Strengths
+    1. It does not waster much time on hopeless moves
+  * Limitations
+    1. It does not fix any other problems of simulation player
+    2. It reaches the performance limits of simple simulation-based player play more quickly
+    3. still only 1 ply deep "Tree search"
+    4. After move 1,still plays randomly for both opponent and player
+    5. Still vulnerable to all biases in the simulation policy
     
 
