@@ -2,7 +2,7 @@
 title: Lecture 18 - Machine learning and UCT
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-04-12T21:09:44.688Z'
+modified: '2019-04-13T02:36:03.851Z'
 ---
 
 # Lecture 18 - Machine learning and UCT
@@ -104,7 +104,7 @@ modified: '2019-04-12T21:09:44.688Z'
 
   
 ## How to use the learned model
-### From move weights to move probabilies
+### From move weights to move probablities
   * Some applications require probabilities not just weights
   * Idea: run MM to learn feature weights $w_i$
   * Compute the strength of each move as product of its features'weights
@@ -117,7 +117,7 @@ modified: '2019-04-12T21:09:44.688Z'
 ### Limits of learning form Game records
   1. Can only learn what is in the data(只能学习数据中存在的，对于新的情况反映不好)
   2. Can only learn what can be represented in our model(很多复杂的情况因为没法表示，所以学习不到)
-    * Nerual nets are much more powerful to represent high-level concepts than simple features
+    * Neural nets are much more powerful to represent high-level concepts than simple features
 
 ### Limits of move prediction
 > A better move predictor does not necessarily make a better player

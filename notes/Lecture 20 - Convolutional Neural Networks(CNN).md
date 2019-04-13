@@ -2,7 +2,7 @@
 title: Lecture 20 - Convolutional Neural Networks(CNN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-28T21:18:35.569Z'
-modified: '2019-04-12T23:14:03.145Z'
+modified: '2019-04-13T02:49:56.102Z'
 ---
 
 # Lecture 20 - Convolutional Neural Networks(CNN)
@@ -12,7 +12,7 @@ modified: '2019-04-12T23:14:03.145Z'
   * Later applied to move predictoin in Go
   * Main idea
     * Start learning locally
-    * Hiher layers can learn successively more globally
+    * Higher layers can learn successively more globally
   * Each neuron depends only on a small **closely related group** of neurons on the previous layer
 ### Local Receptive Field
   * Typical sizes 5 x 5, 3 x 3(similar to simple features, 3x3 pattern)
@@ -23,7 +23,7 @@ modified: '2019-04-12T23:14:03.145Z'
   * Want to learn a universally useful set of local features
   * Idea: share weights across all neurons
   * Each neuron on the same level computes the same function but with different input variables(在同一层的神经元有相同的function，唯一区别只是输入的variable不一样)
-  * Same weight used everyywhere on the board
+  * Same weight used everywhere on the board
   * Consequence:
     * Each layer can only learn a single feature
     * To learn more, we use several copies of the layer
@@ -43,7 +43,7 @@ Pooling:
 Paddingadd
 > aritificial outside elements to prevent shrinking(extend图像，加一圈边框)
 
-  * Often: fully connected layers at the end of pipeline
+  * Often: **fully connected layers at the end of pipeline**
 
 ## Deep Convolutional Neural Networks for Go
 ### Inputs for neural networks

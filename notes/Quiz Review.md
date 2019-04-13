@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-12T23:20:15.854Z'
+modified: '2019-04-13T03:50:32.448Z'
 ---
 
 # Quiz Review
@@ -225,8 +225,30 @@ modified: '2019-04-12T23:20:15.854Z'
   :x: **We try to find best function to approximate the data**
   9. Machine learning sometimes works with raw input data, so we do not always need to develop other input features.
   :white_check_mark:  **Raw input in neural network**
+#### Machine learning(Lecture 18)
   10. In a linear model, weights represent the strength of connection between features.
   :x: **Weights reprensent the strength of the feature, larger weight means better feature**
+  11. Neural networks are a special case of linear regression methods.
+  :x: **Neural networks are a kind of function**
+  12. A Go program can learn feature weights even from games that it played itself.
+  :white_check_mark:
+  13. A better move predictor can sometimes lead to a worse overall player, when it is used as knowledge inside MCTS.
+  :white_check_mark:
+  14. One limit of move prediction is that different moves can have the same value, which makes it to hard to predict which one is chosen.
+  :white_check_mark:
+  15. One limit of move prediction is that human players may have different preferences and biases in complex situations.
+  :white_check_mark:
+  16. If a feature has ten different possible values, we can represent it by ten boolean features.
+  :white_check_mark:
+  17. Given a Go position p. The goal of learning feature weights is to find the move from p which has the single feature with the highest value.
+  :x: **We use learned feature weights to select good moves in program**
+  18. The Bradley­Terry model evaluates the strength of a group of moves.
+  :x: **The Bradley­Terry model evaluates the strength of a group of features**
+  19. In each iteration, the Minorization­Maximization (MM) Algorithm exactly solves an approximation of a difficult optimization problem.
+  :white_check_mark: **MM finds an approximation function of the original function to optimize**
+  20. In UCT with additive knowledge, the knowledge term added to the UCT score of the children of the root is larger at the beginning of a search than at the end.
+  :white_check_mark:
+  
 ### Quiz 11
 #### Neural Network(Lecture 19)
   1. A neural network in Computing Science is a pretty accurate model of a neural network in the human brain.

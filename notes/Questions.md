@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-12T22:47:36.887Z'
+modified: '2019-04-13T02:52:15.350Z'
 favorited: true
 pinned: true
 ---
@@ -102,4 +102,10 @@ pinned: true
 30. How to solve the first problem of MCTS?
 
 31. Why we use severl copies of the layer to learn more features?
+
+32. Do we use move predictor in MCTS?
+
+33. Why each layer can only learn one feature?
+
+34. In DNN, the fully connected layer are at top layer, is that same as start of the processing pipeline?
 

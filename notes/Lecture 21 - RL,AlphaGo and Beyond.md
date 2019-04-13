@@ -2,7 +2,7 @@
 title: 'Lecture 21 - RL,AlphaGo and Beyond'
 tags: [Notebooks/Cmput 496]
 created: '2019-03-29T03:35:41.688Z'
-modified: '2019-04-11T21:10:48.023Z'
+modified: '2019-04-13T03:25:00.032Z'
 ---
 
 # Lecture 21 - RL,AlphaGo and Beyond
@@ -16,6 +16,13 @@ modified: '2019-04-11T21:10:48.023Z'
   * Play a game from some state s until the end
   * Receive reward at the end
   * Use that reward to learn about the quality of the individual moves played
+
+### Credit Assignment Problem
+  * Reward for long sequence of decisions
+  * No direct reward for each single move decision
+  * How can we tell which moves are good or bad?
+  * Distribute reward from end of game over all actions
+  * Main idea: iif same action happens in many different sequences, we can learn if it leads to more wins or losses
 
 ### RL vs Supervised Learning in Games
   * Supervised Learning
@@ -48,9 +55,17 @@ modified: '2019-04-11T21:10:48.023Z'
   * Uses Temporal Difference(TD) learning
     * A technique for function approximation by RL
   * Much stronger than Neurogammon
-  * Close to top human players
+  * **Close to top human players**
   * Changed opening theory
   * Changed the way the game is played by human experts
+  * Small(1-3ply) Alphabeta search
+
+### Computer Backgammon Now
+  * Programs generally follow the TD-Gammon architecture
+  * Bigger,faster, longer training
+  * Endgame databases with exact winning probabilities
+  * Considered almost perfect
+  * **Much stronger than humans**
 
 ### TD Learning and TD($\lambda$)
   1. Learn a model
@@ -61,3 +76,10 @@ modified: '2019-04-11T21:10:48.023Z'
   6. Learns from the difference
   7. Discount factor $\lambda$ for future rewards
   8. The sooner after the current state the reward happens, the higher the effect
+  * TD high-level ideas
+    * Usually, predictions from states closer to the end are more reliable
+    * Bootstrapping - learn predictions from other predictions
+    
+
+
+
