@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-13T03:50:32.448Z'
+modified: '2019-04-13T05:30:37.367Z'
 ---
 
 # Quiz Review
@@ -248,7 +248,7 @@ modified: '2019-04-13T03:50:32.448Z'
   :white_check_mark: **MM finds an approximation function of the original function to optimize**
   20. In UCT with additive knowledge, the knowledge term added to the UCT score of the children of the root is larger at the beginning of a search than at the end.
   :white_check_mark:
-  
+
 ### Quiz 11
 #### Neural Network(Lecture 19)
   1. A neural network in Computing Science is a pretty accurate model of a neural network in the human brain.
@@ -292,3 +292,24 @@ modified: '2019-04-13T03:50:32.448Z'
   20. Consider the first Deep Convolutional NN developed by DeepMind, as described in the paper by Maddison, Huang, Sutskever and Silver. Claim: without any search, this network could win a majority of games against strong open source MCTS programs which ran 10000 simulations per move.
   :x: 
 ### Quiz 12
+#### Reinforement learning and Alpha Go(Lecture 21)
+  1. A single DCNN evaluation of a policy net produces a probability map for all moves on a Go board.
+  :white_check_mark:
+  2. The credit assignment problem is a central problem in both supervised and reinforcement learning.
+  :x: **It's center problem of reinforcement learning only**
+  3. The programs Neurogammon and TD­Gammon both apply Reinforcement Learning to learn neural networks for backgammon.
+  :x: **Neurogammon use neural network and TDGammon use reinforcement learning**
+  4. TD­Gammon uses search as well as neural network evaluation.
+  :white_check_mark:
+  5. In TD(lambda), rewards that are in the future count less than immediate rewards.
+#### Alpha Go(Lecture 22)
+  6. In the AlphaGo Fan version, the policy network trained with reinforcement learning has more neurons than the policy network trained with supervised learning.
+  :x: **They have the same neurons**
+  7. In the AlphaGo Fan version, the training process for the value network uses learning from labeled training data.
+  :white_check_mark:
+  8. When using only its neural networks without MCTS, AlphaGo Fan is almost as strong as when it uses MCTS.
+  :x: **When using MCTS, AlphaGo Fan is much bettern than without MCTS**
+  9. For move prediction, the AlphaGo Fan RL policy net works better than the SL policy net.
+  :white_check_mark:
+  10. The RL policy net in AlphaGo is trained using the TD(lambda) algorithm.
+  :x: ****

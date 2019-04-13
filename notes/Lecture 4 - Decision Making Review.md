@@ -2,7 +2,7 @@
 title: Lecture 4 - Decision Making Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T18:34:07.765Z'
-modified: '2019-04-11T19:03:09.414Z'
+modified: '2019-04-13T04:03:26.815Z'
 ---
 
 # Lecture 4 - Decision Making Review
@@ -36,7 +36,7 @@ modified: '2019-04-11T19:03:09.414Z'
 
 
 ### State,Game state
-  #### **Complete description of the current situation**(用来描述当前的完整游戏情况，例如，下一步该谁走了，双方各自的move历史。游戏情况同时对双方都是透明的)
+   **Complete description of the current situation**(用来描述当前的完整游戏情况，例如，下一步该谁走了，双方各自的move历史。游戏情况同时对双方都是透明的)
     * 在Go1以及别的程序中，我们用simple_board.py中的SimpleGoBoard Class来表示
   * States plus rules of game allows us to determine actions
   * Often include **part of** history of the game(从游戏开始到当前的一系列moves)
