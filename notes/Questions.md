@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-13T02:52:15.350Z'
+modified: '2019-04-13T23:38:37.673Z'
 favorited: true
 pinned: true
 ---
@@ -108,4 +108,6 @@ pinned: true
 33. Why each layer can only learn one feature?
 
 34. In DNN, the fully connected layer are at top layer, is that same as start of the processing pipeline?
+
+35. What's meaning of no simulations to end of the game?
 
