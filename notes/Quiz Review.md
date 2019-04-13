@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-13T05:30:37.367Z'
+modified: '2019-04-13T22:36:30.358Z'
 ---
 
 # Quiz Review
@@ -312,4 +312,5 @@ modified: '2019-04-13T05:30:37.367Z'
   9. For move prediction, the AlphaGo Fan RL policy net works better than the SL policy net.
   :white_check_mark:
   10. The RL policy net in AlphaGo is trained using the TD(lambda) algorithm.
-  :x: ****
+  :x: **It trained by reinforcement learning from self-play**
+  

@@ -2,7 +2,7 @@
 title: Lecture 22 - AlphaGo
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T04:17:45.590Z'
-modified: '2019-04-13T05:12:25.854Z'
+modified: '2019-04-13T22:34:22.379Z'
 ---
 
 # Lecture 22 - AlphaGo
@@ -52,8 +52,49 @@ modified: '2019-04-13T05:12:25.854Z'
     * RL policy network
       * Learns from self play
       * adjust weights of net to learn from winner of each game
-      * Exact same network architecture as SL net
+      * **Exact same network architecture as SL net**
       * keeps a pool of previous networks as opponents to avoid overfitting
+      * No search, only one call to network
+      * Play move by sampling from $p_p$
     * Value network
+      * Value net computes a function $v_{\theta}(s)$
+      * Input state s and output a single real number
+      * Training: minimize squared error between value net prediction and true game outcome
+      $\text { Squared error }=\sum_{i}\left(v_{\theta}\left(s_{i}\right)-z_{i}\right)^{2}$
+      * Training data:
+        1. Randomly sample one single state s from each game
+        2. Label s with the outcome z of the game
+        3. Learn the value net by trying to predict z i from s
+    
+#### MCTS in AlphaGo Fan
+  * Neural nets used as in-tree knowledge
+    * Policy net guides tree search
+    * Vallue net helps evaluate leaf nodes
+  * Maximize Q + u
+    * Winrate Q is exploitation term
+    * u is exploration term
+    * Decay by $u=C \frac{P}{1+N}$
+    * Exploration constant C
+
+#### Computing V($s_L$)
+  * Value estimate V($s_L$) of leaf nodes $s_L$
+  * V($s_L$) is weighted average of two different evaluations
+  * $v_{\theta}\left(s_{L}\right)=$ Value network evaluation of $s_L$
+  * $z_L=$ win/loss result of single simulation from $s_L$
+  * Combined by $V\left(s_{L}\right)=(1-\lambda) v_{\theta}\left(s_{L}\right)+\lambda z_{L}$
+    * $\lambda=0.5$ equal weight
+
+#### SL vs RL policy network in MCTS 
+  * Search with RL policy was too narrow
+  * Quality of other candidate moves not as good as in SL network
+  * SL net worked better in MCTS, even though it is much weaker in move prediction
+  * SL net gave a better set of good moves to search, not just a single strong move
+  * This problem is already solved in Alphago Zero
+
+#### Summary
+  * AlphagoFan : MCTS + neural networks for knowledge
+  * Policy net for biasing in-tree move selection
+  * Value net plus simulations for evaluating leaf nodes in tree
+  
 
 
