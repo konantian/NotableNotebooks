@@ -2,7 +2,7 @@
 title: Reading
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T17:09:25.500Z'
-modified: '2019-04-13T18:53:31.031Z'
+modified: '2019-04-14T03:38:20.422Z'
 ---
 
 # Reading
@@ -37,5 +37,23 @@ modified: '2019-04-13T18:53:31.031Z'
 * The longest line analyzed was 154 ply
 * The checkers computation pushes the boundary of what can be archieved by search-intensive algorithms
 * Chess will remain unsolved for a long time
+
+## Solving Go on small boards
+* Many games have been solved using a search-based approach, Go is a notable exception.
+* Mini go Solver solves all square boards up to 5x5 and can be applied to any enclosed problem of similiar size.
+* There are no good nor cheap evaluation function for 19x19 Go board
+* The Euler number of a binary image, is the number of objects minus the number of holes in those objects
+* A set of stones is said to be unconditionally alive if they cannot be captured and never require any defensive
+move.
+* Benson's algorithm can be extended to determine safety under local alternating play
+* Benson-controlled regions are formed by the unconditionally-alive blocks and their vital regions (eyespace), as classified by Benson’s algorithm.
+* Open regions are not connected to unconditionally-alive stones (which is common early in the game) or are between unconditionally-alive stones of both sides.
+* Closed regions are surrounded by unconditionally-alive stones of one colour
+* Unconditional territory can further be used for reducing the branching factor
+* It just means that after that depth the Principal Variation and value of the move were no longer affected by deeper searches
+* static analysis of unconditional territory is more expensive than a simple evaluation at the leaves 
+* On todays’ standard PC MIGOS is not yet ready to take on the empty 6x6 board
+*
+*
 
 
