@@ -2,7 +2,7 @@
 title: Lecture 23 - AlphaGo Zero
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T22:42:18.254Z'
-modified: '2019-04-13T23:45:40.552Z'
+modified: '2019-04-14T00:10:31.848Z'
 ---
 
 # Lecture 23 - AlphaGo Zero
@@ -88,6 +88,8 @@ modified: '2019-04-13T23:45:40.552Z'
     * $(p, v) = f_{\theta}(s)$
     * Make policy _p_ better match $\pi$
     * Make value _v_ better match $z$
+
+
 
 
 
