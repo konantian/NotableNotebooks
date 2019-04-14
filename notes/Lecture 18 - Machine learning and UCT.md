@@ -2,7 +2,7 @@
 title: Lecture 18 - Machine learning and UCT
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-04-14T18:46:32.970Z'
+modified: '2019-04-14T20:59:25.936Z'
 ---
 
 # Lecture 18 - Machine learning and UCT
@@ -47,7 +47,7 @@ modified: '2019-04-14T18:46:32.970Z'
     1. Use for move ordering in search
     2. Use for better moves in simulation policies
   * Fast vs Slow 
-    * Fast: use simple features(效果不好)
+    * Fast: use simple features(效果不好但是快)
     * Slow: use deep neural network(训练会花费大量时间，但效果更好)
   * As classification Problem
     * Compute score for each legal move
@@ -123,9 +123,8 @@ modified: '2019-04-14T18:46:32.970Z'
 ### Limits of move prediction
 > A better move predictor does not necessarily make a better player
 
-  1. A better move predictor does not necessarily make a better player
-  2. Playing moves that are good “on average” may fail in such situations
-  3. Can never reach 100% prediction
+  1. Playing moves that are good “on average” may fail in such situations
+  2. Can never reach 100% prediction
     * Multiple equally good moves(当有好几个move一样好的时候，会选择哪个难以确定)
       * Same point value in endgame(当好几个move可以在游戏结束是到达同样state的时候)
       * Forcing moves(不得不走的move，但是不一定什么时候走)

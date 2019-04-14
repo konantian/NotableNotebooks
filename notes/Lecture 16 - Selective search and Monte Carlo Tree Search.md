@@ -2,7 +2,7 @@
 title: Lecture 16 - Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-04-12T05:37:41.804Z'
+modified: '2019-04-14T20:28:59.094Z'
 ---
 
 # Lecture 16 - Selective search and Monte Carlo Tree Search
@@ -45,7 +45,7 @@ modified: '2019-04-12T05:37:41.804Z'
     * Min and Max
   * Search “interesting” moves much deeper than others
   * Source of error:
-    1. Source of error: heuristic evaluation in leaf nodes
+    1. heuristic evaluation in leaf nodes
     2. may prune the best move from a node --- **MCTS was the first approach that worked well that keep best move**
   ![](https://ws4.sinaimg.cn/large/006tNc79ly1g1yk011j04j30ze0majzf.jpg =400x400)
 

@@ -2,7 +2,7 @@
 title: Reading
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T17:09:25.500Z'
-modified: '2019-04-14T03:38:20.422Z'
+modified: '2019-04-14T21:44:51.374Z'
 ---
 
 # Reading
@@ -53,7 +53,15 @@ move.
 * It just means that after that depth the Principal Variation and value of the move were no longer affected by deeper searches
 * static analysis of unconditional territory is more expensive than a simple evaluation at the leaves 
 * On todays’ standard PC MIGOS is not yet ready to take on the empty 6x6 board
-*
-*
 
-
+## Computing Elo Ratings of Move Patterns in the Game of Go
+* Move patterns may be build by hand, or generated automatically.
+* From the ratings of players, it is possible to estimate a probability distribution over the outcome of future games.
+* By taking the strength of opponents into account, methods based on the Elo rating system can compute more accurate pattern strengths.
+* The same $\gamma_{i}$ may appear in more than one team. 
+* The batch-update approach still has good convergence properties and offers the opportunity to re-use computations.
+* A generalized Badley-Terry model can be applied to supervised learning of Go patterns.
+* The prediction rate obtained with minorization-maximization and the Bradley-Terry model is the best among those published in academic papers.
+* The move with highest probability still produces a terribly weak Go player. It plays some good-looking moves but also make huge blunders.
+* When a node in the Monte-Carlo search tree is created, it is searched for a while without any pruning,selecting the move according the policy of random simulations.
+* Generalized Bradley-Terry model is a very powerful technique for pattern learning in the game of Go.It is simple and efficient,can combine several features and produces a probability distribution over legal moves.

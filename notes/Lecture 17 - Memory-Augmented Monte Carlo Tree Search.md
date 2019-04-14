@@ -2,7 +2,7 @@
 title: Lecture 17 - Memory-Augmented Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T19:57:59.017Z'
-modified: '2019-04-12T06:45:57.702Z'
+modified: '2019-04-14T20:42:26.393Z'
 ---
 
 # Lecture 17 - Memory-Augmented Monte Carlo Tree Search
@@ -41,7 +41,7 @@ modified: '2019-04-12T06:45:57.702Z'
     * How much time to use on each move?
     * Spend more time on more important decisions
   * Remembering Facts
-    * Transpostition table
+    * Transposition table
     * Endgame Database
     * Memory and cache
     * Tabular learning
@@ -74,7 +74,7 @@ modified: '2019-04-12T06:45:57.702Z'
   4. functions for which we have efficient learning algorithms
   * Examples of models
     1. Linear models using features $f_i$ as input
-    2. Nerual network using raw data as input
+    2. Neural network using raw data as input
 
 **Output of learning process**
   1. Classiﬁers: good/bad move, ﬁlter/don’t ﬁlter for search,

@@ -2,7 +2,7 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-14T20:15:39.260Z'
+modified: '2019-04-14T20:38:34.954Z'
 favorited: true
 pinned: true
 ---
@@ -118,4 +118,6 @@ pinned: true
 38. Are three channels of raw input of DCNN on Go, are these three channesl are RGB channels?
 
 39. In DCNN for Go, the FC layer is located at the top, is that means FC is the first layer of DCNN?
+
+40. Why nodes near to leaf and leaf nodes has less simulations than other nodes in MCTS?
 

@@ -2,14 +2,14 @@
 title: Lecture 20 - Convolutional Neural Networks(CNN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-28T21:18:35.569Z'
-modified: '2019-04-13T02:49:56.102Z'
+modified: '2019-04-14T21:05:10.876Z'
 ---
 
 # Lecture 20 - Convolutional Neural Networks(CNN)
 ## Convolutional Neural Networks(CNN)
 ### CNN 
   * Hugely successful in image recognition tasks
-  * Later applied to move predictoin in Go
+  * Later applied to move prediction in Go
   * Main idea
     * Start learning locally
     * Higher layers can learn successively more globally
@@ -40,7 +40,7 @@ modified: '2019-04-13T02:49:56.102Z'
 Pooling:
 > reduce from region(e.g. 2x2 region) to single neuron by averaging
 
-Paddingadd
+Padding
 > aritificial outside elements to prevent shrinking(extend图像，加一圈边框)
 
   * Often: **fully connected layers at the end of pipeline**
