@@ -2,7 +2,7 @@
 title: Lecture 18 - Machine learning and UCT
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-04-13T02:36:03.851Z'
+modified: '2019-04-14T18:46:32.970Z'
 ---
 
 # Lecture 18 - Machine learning and UCT
@@ -53,6 +53,7 @@ modified: '2019-04-13T02:36:03.851Z'
     * Compute score for each legal move
     * class 1 = {highest scoring move}
     * class 2 = {all other moves}
+    * The problem is solved when $m$* has the highest score(说明我们找到的的分数最好的move就是m*)
   * Game data
     * Games records with master moves
     * Games between professional players

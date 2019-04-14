@@ -1,11 +1,11 @@
 ---
-title: Lecture 24 - Alpha Zero
+title: Lecture 24 - Alpha Zero Approach
 tags: [Notebooks/Cmput 496]
 created: '2019-04-14T00:29:54.234Z'
-modified: '2019-04-14T00:48:58.210Z'
+modified: '2019-04-14T19:03:04.088Z'
 ---
 
-# Lecture 24 - Alpha Zero
+# Lecture 24 - Alpha Zero Approach
 #### Alpha Zero Approach
   * Same as in AlphaGo Zero:
     * Two-head deep network, with policy and value heads

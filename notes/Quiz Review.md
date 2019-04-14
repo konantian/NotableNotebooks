@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-13T22:36:30.358Z'
+modified: '2019-04-14T17:03:28.947Z'
 ---
 
 # Quiz Review
@@ -31,7 +31,7 @@ modified: '2019-04-13T22:36:30.358Z'
   6. When we organize sequences into trees, some sequences might not share any nodes.
   :x: : **Since any two sequences shares at least one node(the root node)**
   7. In the DAG model, two sequences can start differently but merge later.
-  :white_check_mark: : **Two sequences can start differently but merge later if they reach equivalent states later**
+  :white_check_mark:**Two sequences can start differently but merge later if they reach equivalent states later**
   8. In the tree model, two sequences can start differently but merge later.
   :x: : **For any equivalent states in tree, they have unique path from root to it, they cannot merge together**
 #### optimization(Lecture 6)
@@ -163,7 +163,7 @@ modified: '2019-04-13T22:36:30.358Z'
 ### Quiz 9
 #### UCB and monto carlo tree search(Lecture 16)
   1. The main idea of selective game tree search is to increase the branching factor of the search.
-  :x: **Selective game tree is for reduce the branching factor**
+  :x: **Selective game tree is for reduce the branching factor and depth**
   2. All selective search algorithms require game­specific knowledge for move selection.
   :x: **They does not require knowledge of game specific**
   3. Selective alphabeta search works well in Go.
