@@ -1,11 +1,11 @@
 ---
-title: 'Lecture 21 - RL,AlphaGo and Beyond'
+title: Lecture 21 - Reinforcement learning
 tags: [Notebooks/Cmput 496]
 created: '2019-03-29T03:35:41.688Z'
-modified: '2019-04-13T03:25:00.032Z'
+modified: '2019-04-15T05:08:24.092Z'
 ---
 
-# Lecture 21 - RL,AlphaGo and Beyond
+# Lecture 21 - Reinforcement learning
 ### Basic Concepts of RL
   * Observe input(state of game)
   * Produce move,action
