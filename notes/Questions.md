@@ -2,21 +2,18 @@
 title: Questions
 tags: [Notebooks/Cmput 496]
 created: '2019-04-10T20:06:43.150Z'
-modified: '2019-04-14T20:38:34.954Z'
+modified: '2019-04-15T17:16:36.442Z'
 favorited: true
 pinned: true
 ---
 
 # Questions
 1. Why tree is easiest for search and DCG hardest, how about DAG?
-
-**in tree everything is independent,only one parent for each node**
-**a node have multiple parents in DAG,we need to update more nodes in backpropagation**
-**In DCG,thre are cycles, the child can be in subtree of itself, a node has parent of itself. we cannot just compute the value directly**
+  **in tree everything is independent,only one parent for each node a node have multiple parents in DAG,we need to update more nodes in backpropagation In DCG,thre are cycles, the child can be in subtree of itself, a node has parent of itself. we cannot just compute the value directly**
 
 2. Reasons for using DAG instead of DCG and tree?
 
-**DAG can be much smaller and no cycles, no duplications**
+  **DAG can be much smaller and no cycles, no duplications**
 
 3. Always interger komi in Go?
 **not always integer for avoid draw**
@@ -98,26 +95,23 @@ pinned: true
 **For each iterations, it contains selection simulation and backpropagation, since it has to reach the terminal states in each iteration and back up the value from bottom to root node**
 
 29. In the root of a tree of depth 1, why UCT and UCB are same?
-
-30. How to solve the first problem of MCTS?
-
-31. Why we use severl copies of the layer to learn more features?
+**total simulatiosn are same**
 
 32. Do we use move predictor in MCTS?
+**Yes**
 
 33. Why each layer can only learn one feature?
-
-34. In DNN, the fully connected layer are at top layer, is that same as start of the processing pipeline?
+**One different filter learn one feature**
 
 35. What's meaning of no simulations to end of the game?
 
 36. What's the meaning of exact search?
-
+**result must be correct**
 37. If each layer can only leanr one feature, is that mean we need at least 20 layers to learn image recognition task with 20 features?
-
-38. Are three channels of raw input of DCNN on Go, are these three channesl are RGB channels?
-
-39. In DCNN for Go, the FC layer is located at the top, is that means FC is the first layer of DCNN?
+**in one layer we need 20 different filters to learn 20 features**
 
 40. Why nodes near to leaf and leaf nodes has less simulations than other nodes in MCTS?
+
+41. How to use vector to represent move probabilities?
+**a vector with three values of probabilities**
 
