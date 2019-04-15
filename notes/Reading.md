@@ -2,7 +2,7 @@
 title: Reading
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T17:09:25.500Z'
-modified: '2019-04-14T21:44:51.374Z'
+modified: '2019-04-14T23:13:46.320Z'
 ---
 
 # Reading
@@ -65,3 +65,14 @@ move.
 * The move with highest probability still produces a terribly weak Go player. It plays some good-looking moves but also make huge blunders.
 * When a node in the Monte-Carlo search tree is created, it is searched for a while without any pruning,selecting the move according the policy of random simulations.
 * Generalized Bradley-Terry model is a very powerful technique for pattern learning in the game of Go.It is simple and efficient,can combine several features and produces a probability distribution over legal moves.
+
+## A survey of Monte Carlo Tree Search Method
+* Researches are now in the process of attaining a better understanding of when and why MCTS succeeds and fails.
+* MCTS can be used with little or no domain knowledge.
+* The values of intermediate states do not have to be evaluated.
+* MCTS can provides an agent with some decision making capacity with very little domain-specific knowledge.
+* Decision theory combines probability theory with utility theory to provide a formal and complete framework for decisions makde under uncertainty.
+* A policy is a mapping from states to actions, specifying which action will be chosen from each state in S.
+* The combinations of palyer's strategies form a Nash equilibrium if no player can benefit by unilaterally switching strategies.
+* Monte Carlo approaches in which the actions of a given state are uniformly sampled are described as flat Monte Carlo
+* The backpropagation does not use a policy itself.

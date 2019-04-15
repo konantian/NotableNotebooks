@@ -2,7 +2,7 @@
 title: Quiz Review
 tags: [Notebooks/Cmput 496]
 created: '2019-04-11T19:04:00.999Z'
-modified: '2019-04-14T17:03:28.947Z'
+modified: '2019-04-14T23:49:27.474Z'
 ---
 
 # Quiz Review
@@ -167,8 +167,9 @@ modified: '2019-04-14T17:03:28.947Z'
   2. All selective search algorithms require game­specific knowledge for move selection.
   :x: **They does not require knowledge of game specific**
   3. Selective alphabeta search works well in Go.
-  :x: **Usually, only 1-10 moves of all moves are good**
+  :x: **Usually, only 1-10 moves of all moves are good. It works bad in Go**
   4. Given a (b,d) tree with b=10, d=5 and a simple simulation­based player which selects moves uniformly at random. Let n be one leaf node in the tree. What is the probability of a single simulation reaching n?
+  $\frac{1}{b^d} = \frac{1}{10^5} = 0.00001$
   5. In simulation­based players, the average value of a small number of good moves is usually closer to the true min or max than the average value of all moves.
   :white_check_mark:
 #### Probabilistic simulation policies(Lecture 14)
@@ -194,7 +195,7 @@ modified: '2019-04-14T17:03:28.947Z'
   14. The UCT algorithm decides how to grow its game tree by using the statistics from previous simulations.
   :white_check_mark: **It using the statistics about the visit count and win rate**
   15. Both UCB and UCT try to balance Exploration and Exploitation.
-  :x: **We need both exploration and exploitation**
+  :white_check_mark: **We need both exploration and exploitation**
   16. Assume we are in the middle of a Monte Carlo Tree Search, which uses simulations, and have already expanded the tree a bit. Of the four steps in Monte Carlo Tree Search, which steps have to be done in every further iteration?
   **Selection Simulation Backpropagation**
   17. In regular MCTS, we do not store the states reached during the default policy phase. What would happen for a complex search problem if we would store them in the tree as well?
@@ -247,7 +248,7 @@ modified: '2019-04-14T17:03:28.947Z'
   19. In each iteration, the Minorization­Maximization (MM) Algorithm exactly solves an approximation of a difficult optimization problem.
   :white_check_mark: **MM finds an approximation function of the original function to optimize**
   20. In UCT with additive knowledge, the knowledge term added to the UCT score of the children of the root is larger at the beginning of a search than at the end.
-  :white_check_mark:
+  :white_check_mark: **The effect of knowledge will decay**
 
 ### Quiz 11
 #### Neural Network(Lecture 19)
