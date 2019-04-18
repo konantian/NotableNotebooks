@@ -2,7 +2,7 @@
 title: Lecture 18 - Machine learning and UCT
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T21:59:25.849Z'
-modified: '2019-04-14T20:59:25.936Z'
+modified: '2019-04-16T14:56:26.292Z'
 ---
 
 # Lecture 18 - Machine learning and UCT
@@ -33,7 +33,7 @@ modified: '2019-04-14T20:59:25.936Z'
   1. Evaluate one move m
   2. Check which features are active for m
   3. Learn a weight for each feature
-  4. Compare between all moves by evaluation funciton(linear combination)
+  4. Compare between all moves by evaluation function(linear combination)
   5. Sum all terms that are active
   $\sum_{i=1}^{\infty} w_if_i$
   $eval(m) =  0 × w_0 + 1 × w_1 + 0 × w_2 + 0 × w_3 + 1 × w_4 = w_1 + w_4$
@@ -105,7 +105,7 @@ modified: '2019-04-14T20:59:25.936Z'
 
   
 ## How to use the learned model
-### From move weights to move probablities
+### From move weights to move probabilities
   * Some applications require probabilities not just weights
   * Idea: run MM to learn feature weights $w_i$
   * Compute the strength of each move as product of its features'weights

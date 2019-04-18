@@ -2,7 +2,7 @@
 title: Lecture 14 - Statistical Analysis of Repeated Simulations
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T23:44:54.014Z'
-modified: '2019-04-12T04:19:37.392Z'
+modified: '2019-04-16T08:06:55.025Z'
 ---
 
 # Lecture 14 - Statistical Analysis of Repeated Simulations
@@ -27,7 +27,7 @@ modified: '2019-04-12T04:19:37.392Z'
   * Each move has different probability
   * Probabilities are better suited for many machine learning methods
 
-**Uniforum random**
+**Uniform random**
   * Each move has same probability
 
 **Rule based policy**

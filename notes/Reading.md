@@ -2,7 +2,7 @@
 title: Reading
 tags: [Notebooks/Cmput 496]
 created: '2019-04-13T17:09:25.500Z'
-modified: '2019-04-14T23:13:46.320Z'
+modified: '2019-04-16T16:23:13.132Z'
 ---
 
 # Reading
@@ -71,7 +71,7 @@ move.
 * MCTS can be used with little or no domain knowledge.
 * The values of intermediate states do not have to be evaluated.
 * MCTS can provides an agent with some decision making capacity with very little domain-specific knowledge.
-* Decision theory combines probability theory with utility theory to provide a formal and complete framework for decisions makde under uncertainty.
+* Decision theory combines probability theory with utility theory to provide a formal and complete framework for decisions make under uncertainty.
 * A policy is a mapping from states to actions, specifying which action will be chosen from each state in S.
 * The combinations of palyer's strategies form a Nash equilibrium if no player can benefit by unilaterally switching strategies.
 * Monte Carlo approaches in which the actions of a given state are uniformly sampled are described as flat Monte Carlo

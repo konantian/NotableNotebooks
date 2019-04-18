@@ -2,7 +2,7 @@
 title: Lecture 17 - Memory-Augmented Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T19:57:59.017Z'
-modified: '2019-04-14T20:42:26.393Z'
+modified: '2019-04-16T14:25:17.964Z'
 ---
 
 # Lecture 17 - Memory-Augmented Monte Carlo Tree Search
@@ -32,7 +32,7 @@ modified: '2019-04-14T20:42:26.393Z'
     * Find interesting trends, **correlations** in your data(比如可以学习fuanction的参数)
     * Learn a function from data
       * Approxiamte the data as well as possible(avoid under fitting)
-      * Robust again noisy data
+      * Robust against noisy data
       * **Avoid overfitting**
   * Learn a move generation policy
   * Learn a search control for the tree search

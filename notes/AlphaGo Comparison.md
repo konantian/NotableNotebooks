@@ -2,11 +2,11 @@
 title: AlphaGo Comparison
 tags: [Notebooks/Cmput 496]
 created: '2019-04-15T05:16:06.916Z'
-modified: '2019-04-15T16:21:41.371Z'
+modified: '2019-04-16T02:07:05.162Z'
 ---
 
 # AlphaGo Comparison
-## Alpha Fan
+## AlphaGo Fan
 **Search**
    * MCTS(parallel MCTS)
    * Modified UCT combines simulation result and value network evaluation
@@ -18,11 +18,6 @@ modified: '2019-04-15T16:21:41.371Z'
   * Slightly larger patterns features
   * linear softmax of small pattern features
   * designed to be simple and fast
-
-**Supervised learning policy network**
-  * DCNN
-  * Learns move prediction from master games
-  * more data
 
 **Network Architecture**
   * SL policy network(new)
@@ -48,9 +43,16 @@ modified: '2019-04-15T16:21:41.371Z'
   * Same overall design for three
 
 ## AlphaGoLee
-
+  * Much more RL than Fan
+  * Trained from AlphaGo selfplay games not from RL policy games anymore
+  * Larger neural net
+  * 3 handicap stones stronger than AlphaGoFan in self-play
 
 ## AlphaGoMaster
+  * Still uses handcrafted input features
+  * Still uses rollouts as part of evaluation
+  * Still uses initialization by SL net
+  * Mostly same architecture as AlphaGo Zero
 
 ## AlphaGoZero
   * Master the game of Go without human knowledge
@@ -71,5 +73,21 @@ modified: '2019-04-15T16:21:41.371Z'
 **Deep Residual Neural Network (Resnet)**
   * Two head architecture
     * Deep net
-    * 
+    * Two outputs:(p,v)
+    * p vector of move probabilities p(s,a) for each move a
+    * v value of s
+  * Policy head
+    * learns to predict what the search would do
+    * How frequently should each move be tried in MCTS
+    * minimize cross-entropy between predicted probability of move and frequency of move as selected by MCTS
+    * Cross-entropy: measures how well one probability distribution can predict another
+  * Value head
+    * Computes probability of winning
+    * trained from selfplay
+    * minimize squared error between predicted value v and final result z of game
+  * Exploitation term Q,value of simulation ending in in-tree state s =value head evaluation of s. No more simulation beyond the tree,no more evaluation component from rollouts.
+
+**training**
+  * Error measured by loss function
+  * error of policy head,error of value head,regularization term to keep size of weights in check
 

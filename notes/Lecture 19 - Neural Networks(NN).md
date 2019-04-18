@@ -2,7 +2,7 @@
 title: Lecture 19 - Neural Networks(NN)
 tags: [Notebooks/Cmput 496]
 created: '2019-03-26T04:21:07.792Z'
-modified: '2019-04-13T02:42:01.319Z'
+modified: '2019-04-16T15:39:57.978Z'
 ---
 
 # Lecture 19 - Neural Networks(NN)
@@ -81,7 +81,7 @@ modified: '2019-04-13T02:42:01.319Z'
 > NN with at least one hidden layer can approximate any continuous function arbitrarily well, given enough neurons in the hidden layer
 
   * Does not mean approximate **_any_** function well
-  * By adding more and more hidden neurons, we can make the rror smaller and smaller
+  * By adding more and more hidden neurons, we can make the error smaller and smaller
   * The theorem is only about continuous function. But we can also approximate functions with discontinuous **jumps pretty well**.
   * Multilayer "deep" networks is necessay althought 1 hidden layer is enough **in theory**.
     1. Efficiency of learning

@@ -2,7 +2,7 @@
 title: Lecture 15 - Upper confidence bound
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T02:54:04.851Z'
-modified: '2019-04-12T04:57:23.312Z'
+modified: '2019-04-16T08:15:01.590Z'
 ---
 
 # Lecture 15 - Upper confidence bound
@@ -46,7 +46,7 @@ modified: '2019-04-12T04:57:23.312Z'
 
 **Strengths and limitations of UCB**
   * Strengths
-    1. It does not waster much time on hopeless moves
+    1. It does not waste much time on hopeless moves
   * Limitations
     1. It does not fix any other problems of simulation player
     2. It reaches the performance limits of simple simulation-based player play more quickly

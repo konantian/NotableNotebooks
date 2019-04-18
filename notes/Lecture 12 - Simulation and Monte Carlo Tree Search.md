@@ -2,7 +2,7 @@
 title: Lecture 12 - Simulation and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-23T02:32:16.065Z'
-modified: '2019-04-12T02:25:07.381Z'
+modified: '2019-04-16T07:55:21.992Z'
 ---
 
 # Lecture 12 - Simulation and Monte Carlo Tree Search
@@ -73,7 +73,7 @@ modified: '2019-04-12T02:25:07.381Z'
 **Compare between simpulation player and perfect player**
   * Sim(100)
     * Perfect player never loses in either color
-    * 100 is not enought to get precise number
+    * 100 is not enough to get precise number
     * More simulaitons is better(模拟越多效果越好)
     * Close to perfect in TicTacToe but not all games
 

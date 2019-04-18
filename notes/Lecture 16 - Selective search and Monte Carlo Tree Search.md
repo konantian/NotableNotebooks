@@ -2,7 +2,7 @@
 title: Lecture 16 - Selective search and Monte Carlo Tree Search
 tags: [Notebooks/Cmput 496]
 created: '2019-03-24T17:01:46.941Z'
-modified: '2019-04-14T20:28:59.094Z'
+modified: '2019-04-16T08:17:15.192Z'
 ---
 
 # Lecture 16 - Selective search and Monte Carlo Tree Search
@@ -66,7 +66,7 @@ modified: '2019-04-14T20:28:59.094Z'
     * Source of error:
       1. bias, average may be far from min, max(更多sample无法减少bias)
       2. variance, large uncertainty with small number samples(更多sample可以减少variance)
-  * Non-unifrom simulation policy
+  * Non-uniform simulation policy
       * Visit all nodes except subtree below moves that are never selected
       * Backup result to the root node
         * 1-ply max + average over simulations, same with uniform random
